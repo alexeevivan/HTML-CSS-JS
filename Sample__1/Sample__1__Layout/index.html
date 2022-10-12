@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Sample 1
+	</title>
+</head>
+
+<body>
+	<!-- Анатомия тега с закрывающим элементом -->
+	<!--
+		<имя_тега атрибут="значение атрибута"> - открывающий тег
+			содержимое тега
+		</имя_тега> - закрывающий тег
+	-->
+
+	<!-- <div id="id-name" class="class-name" title="Всплывающий текст">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quae similique cumque sed animi labore tempora
+		consectetur distinctio quis, explicabo assumenda harum? Necessitatibus, quia vel quidem veritatis quam dolores
+		quod.
+	</div> -->
+
+	<!-- div.class-name выведет: -->
+	<!-- <div class="class-name"></div> -->
+
+	<!-- .class-name тоже выведет div, но только div -->
+	<!-- <div class="class-name"></div> -->
+
+
+	<!-- Теги строительные -->
+	<div id="top"></div>
+	<div>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate totam atque voluptate repudiandae optio
+		officiis aut sequi veniam. Fugiat veritatis assumenda reiciendis numquam labore cum ad neque aperiam possimus
+		alias.
+	</div>
+	<!-- Семантические теги - теги, у которых есть чётео предназначение -->
+	<header>
+		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quia maiores ea molestias non corrupti beatae,
+		quaerat tenetur! Velit fugiat explicabo a quis accusamus vel rem totam voluptatibus molestiae quos!
+	</header>
+	<nav></nav>
+	<main></main>
+	<footer></footer>
+
+
+	<!-- Теги для контента -->
+
+	<!-- Заголовки -->
+	<h1>Main title</h1>
+	<h2>Not main title</h2>
+	<h3>Less size &amp; sense title</h3>
+	<h4>More less size &amp; sense title</h4>
+	<h5>More &amp; more less size &amp; sense titel</h5>
+	<h6>More &amp; many more less size &amp; sense title</h6>
+
+	<!-- Вывод текста -->
+	<!-- Параграф (блочный) -->
+	<p>
+		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam temporibus rerum molestias explicabo et hic
+		distinctio deserunt perspiciatis ab? Officia harum natus perferendis. Cumque minus a eligendi, harum dolores
+		sed.
+	</p>
+	<!-- Выделение текста (строчный) -->
+	<span></span>
+	<mark></mark>
+	<!-- Ссылка (строчный) -->
+	<!-- Только в ссылку (тег <a>) из всех элементов для контента можно вкладывать любой тег (будь то div или img - разрешено W3C), кроме других ссылок -->
+	<a href="#" target="_top">Ссылка</a>
+	<!-- Маркированный список (блочный) -->
+	<ul>
+		<li>
+			<a href="#p1">
+				Пункт 1
+			</a>
+		</li>
+		<li>
+			Пункт 2
+		</li>
+		<li>
+			Пункт 3
+		</li>
+		<ul>
+			<li>
+				Пункт 1
+			</li>
+			<li>
+				Пункт 2
+			</li>
+		</ul>
+	</ul>
+	<!-- Нумерованный список (блочный) -->
+	<ol>
+		<li>
+			Пункт 1
+		</li>
+		<li>
+			Пункт 2
+		</li>
+		<li>Пункт 3
+		</li>
+	</ol>
+
+	<!-- Пример -->
+	<!-- Желательно h1 использовать 1 раз -->
+	<h1>
+		Article title
+	</h1>
+	<p>
+		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam temporibus rerum molestias explicabo et hic
+		distinctio deserunt perspiciatis ab? Officia harum natus perferendis. Cumque minus a eligendi, harum dolores
+		sed.
+	</p>
+	<p>
+		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam temporibus rerum molestias explicabo et hic
+		distinctio deserunt perspiciatis ab? Officia harum natus perferendis. Cumque minus a eligendi, harum dolores
+		sed.
+	</p>
+	<h2>
+		Article subtitle
+	</h2>
+	<p>
+		Lorem ipsum <span>dolor sit amet consectetur</span> adipisicing elit. Officia cumque nisi doloribus vel
+		<mark>dolore</mark>
+		aspernatur,
+		ducimus offciis in voluptates mollitia, nam aut quidem rem dolores soluta velit odio quibusdam ipsam!
+	</p>
+	<ul>
+		<li></li>
+	</ul>
+	<p id="p1">
+		Я - пункт 1.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cumque nisi doloribus vel dolore
+		aspernatur,
+		ducimus officiis in voluptates mollitia, nam aut quidem rem dolores soluta velit odio quibusdam ipsam!
+	</p>
+	<!-- Теги без закрывающего элемента -->
+	<!-- IMG тег является блочно-строчным, потому что в HTML он ведёт себя, как строчный, а в CSS может применять на себя свойства блочного тега-->
+	<img src="img/__1__.png" alt="Картинка-заглушка" width="320" height="320">
+	<!-- Перевод строки -->
+	<br>
+	<a href="#top">Наверх</a>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+GULP Collector for use with empty new projects

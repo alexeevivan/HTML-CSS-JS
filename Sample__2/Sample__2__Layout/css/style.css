@@ -1,0 +1,212 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+*::before,
+*::after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+:focus,
+:active,
+a:focus,
+a:active {
+	outline: none;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+nav,
+header,
+footer,
+aside {
+	display: block;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+/* -------- */
+
+/* Анатомия CSS*/
+
+	/* 
+	селектор {
+		css параметр;
+		css параметр;
+		css параметр;
+		css параметр;
+		css параметр;
+	}
+	*/
+
+
+/* CSS параметр */
+
+	/* css свойство: значение свойства; */
+
+
+	/* Селекторы */
+
+		/* Селектор тега */
+		/* 
+		имя тега {
+			css параметр;
+			css параметр;
+			css параметр;
+		}
+		*/
+	/* Пример селектора тега */
+p {
+	/* color: green; */
+}
+span {
+	/* color: red; */
+}
+
+/* Селектор класса, начинается с ТОЧКИ */
+
+	/* .имя класса {
+		css параметр;
+		css параметр;
+		...
+		css параметр;
+	} */
+	/* Пример селектора класса */
+.text {
+	/* Обратились ко ВСЕМ объекам в классе text */
+	/* color: green; */
+}
+.paragraph {
+	/* color: red; */
+}
+	/* ЕСЛИ ТЕГУ ДАНЫ 2 КЛАССА С КОНФЛИКТУЮЩИМИ ЗНАЧЕНИЯМИ, КАК СЕЙЧАС - ТЕКСТ
+	ТО ЗЕЛЕНЫЙ, ТО КРАСНЫЙ - ПРИМЕНИТСЯ КРАСНЫЙ, ПОТОМУ ЧТО В CSS ФАЙЛЕ ОН
+	В КОДЕ НАПИСАН НИЖЕ */
+
+/* Селектор ID */
+	/* начинается с # */
+	/* ID в тексте уникальный - должен быть один элемент с таким ID */
+	/* Пример селектора класса */
+#menu {
+	/* color: rgb(255, 0, 195); */
+}
+
+
+/* Приоритет */
+/* 
+	1. Порядок записи при равных селекторах (как классы были разные у одного тега)
+	2. Селектор класса имеет выше приоритет, чем селектор тега
+	3. Селектор ID - наивысший приоритет
+ */
+
+/* УТОЧНЕНИЕ */
+#main-text {
+	/* color: yellow; */
+}
+.text {
+	/* color: green; */
+}
+p {
+	/* color: red; */
+}
+
+/* Уточняем обращение */
+	/* Комбинация селекторов */
+.text {
+	/* color: green; */
+}
+span.text.blue-text {
+	/* color: red; */
+}
+span.blue-text {
+	/* color: blue; */
+}
+
+/* Вложенность и приоритетность */
+
+div p {
+	/* color: blue; */
+}
+
+.content .content__item {
+	/* color: yellowgreen; */
+}
+.content__item {
+	/* color: violet; */
+}
+
+/* Прочие селекторы */
+	/* - * Обращение ко всем объектам */
+.content * {
+	/* color: green; */
+}
+
+/* Только первый уровень вложенности */
+.content > span {
+	/* Обратились ко всем тегам спан нутри контента */
+	/* color: red; */
+}
+.content__item + * {
+	/* color: yellowgreen; */
+}
+.content__item ~ span {
+	/* color: yellowgreen; */
+}
