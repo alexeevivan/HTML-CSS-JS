@@ -192,7 +192,7 @@ body {
 	text-align: center;
 	box-sizing: border-box;
 }
-.one {
+.hovered__menu {
 	width: 81.91px;
 }
 .info-link a {
@@ -206,29 +206,22 @@ body {
 	text-align: center;
 }
 
-.info-link .hovered__link,
+.info-link .hovered__menu,
 .info-cart .hovered__cart,
 .info-cart .hovered__account {
 	cursor: pointer;
 }
 
-.hovered__cart:hover ~ .modal__cart {
-	display: flex;
-}
-
-.hovered__account:hover ~ .modal__account {
-	display: flex;
-}
-
-.info-link .hovered__link:hover {
+.info-link .hovered__menu:hover {
 	color: #FFF;
 	background: #0156FF;
 	border-radius: 100px;
 	z-index: 2;
-	padding: 4px 15px;
-	margin: 0 -12.5px;
+	padding: 10px 15px;
+	margin: 0 -15px;
 }
-.modal {
+
+.modal__menu {
 	display: none;
 	flex-direction: column;
 	position: absolute;
@@ -244,7 +237,7 @@ body {
 	box-sizing: border-box;
 }
 
-#modal__cart {
+.modal__cart {
 	display: none;
 	flex-direction: column;
 	position: absolute;
@@ -257,7 +250,7 @@ body {
 	margin: 0 1090px;
 	top: 137px;
 	border: 1px solid #ccc;
-	z-index: 9;
+	z-index: 10;
 	box-sizing: border-box;
 	align-items: center;
 }
@@ -272,7 +265,7 @@ body {
 	max-width: 232px;
 	max-height: 183px;
 	padding: 0;
-	margin: 0;
+	margin: 0 1168px;
 	top: 137px;
 	border: 1px solid #ccc;
 	z-index: 9;
@@ -286,8 +279,6 @@ body {
 }
 
 .modal__account ul li {
-	
-	
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 200%;
@@ -295,8 +286,11 @@ body {
 	cursor: pointer;
 }
 
+.visible, .visibles {
+	display: flex;
+}
+
 .hovered__title {
-	
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 140%;
@@ -304,8 +298,6 @@ body {
 }
 
 .hovered__count {
-	
-	
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 140%;
@@ -327,8 +319,6 @@ body {
 }
 
 .hovered__next a {
-	
-	
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 21px;
@@ -495,6 +485,12 @@ body {
 	line-height: 21px;
 	color: #000;
 	box-sizing: border-box;
+}
+
+.modal__list .dropdown-menu .dropdown-menu__content .dropdown-menu__items .modal__series .dropdown-menu__item-1 .item-1__submenu .modal__model .item-1__point-1,
+.modal__list .dropdown-menu .dropdown-menu__content .dropdown-menu__items .modal__series .dropdown-menu__item-1 .item-1__submenu .modal__model .item-1__point-2,
+.modal__list .dropdown-menu .dropdown-menu__content .dropdown-menu__items .modal__series .dropdown-menu__item-1 .item-1__submenu .modal__model .item-1__point-3 {
+	justify-content: flex-start;
 }
 
 .modal__list .dropdown-menu .dropdown-menu__content .dropdown-menu__items .modal__series li {
@@ -1213,7 +1209,16 @@ a.slide__btn {
 .group__item-3:hover .product-add-to-cart,
 .group__item-4:hover .product-add-to-cart,
 .group__item-5:hover .product-add-to-cart,
-.group__item-6:hover .product-add-to-cart {
+.group__item-6:hover .product-add-to-cart,
+.modal__product .product__item-1:hover .product-add-to-cart,
+.modal__product .product__item-2:hover .product-add-to-cart,
+.modal__product .product__item-3:hover .product-add-to-cart,
+.modal__product .product__item-4:hover .product-add-to-cart,
+.list-view__item-2 .product__item-1:hover .product-add-to-cart,
+.list-view__item-2 .product__item-2:hover .product-add-to-cart,
+.list-view__item-2 .product__item-3:hover .product-add-to-cart,
+.list-view__item-2 .product__item-4:hover .product-add-to-cart,
+.list-view__item-2 .product__item-5:hover .product-add-to-cart{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1227,7 +1232,16 @@ a.slide__btn {
 .group__item-3:hover .product-add-to-cart .product-btn,
 .group__item-4:hover .product-add-to-cart .product-btn,
 .group__item-5:hover .product-add-to-cart .product-btn,
-.group__item-6:hover .product-add-to-cart .product-btn {
+.group__item-6:hover .product-add-to-cart .product-btn,
+.modal__product .product__item-1:hover .product-add-to-cart .product-btn,
+.modal__product .product__item-2:hover .product-add-to-cart .product-btn,
+.modal__product .product__item-3:hover .product-add-to-cart .product-btn,
+.modal__product .product__item-4:hover .product-add-to-cart .product-btn,
+.list-view__item-2 .product__item-1:hover .product-add-to-cart .product-btn,
+.list-view__item-2 .product__item-2:hover .product-add-to-cart .product-btn,
+.list-view__item-2 .product__item-3:hover .product-add-to-cart .product-btn,
+.list-view__item-2 .product__item-4:hover .product-add-to-cart .product-btn,
+.list-view__item-2 .product__item-5:hover .product-add-to-cart .product-btn {
 	width: 160px;
 	height: 100%;
 }
@@ -1237,7 +1251,16 @@ a.slide__btn {
 .group__item-3:hover .product-add-to-cart .product-btn button,
 .group__item-4:hover .product-add-to-cart .product-btn button,
 .group__item-5:hover .product-add-to-cart .product-btn button,
-.group__item-6:hover .product-add-to-cart .product-btn button {
+.group__item-6:hover .product-add-to-cart .product-btn button,
+.modal__product .product__item-1:hover .product-add-to-cart .product-btn button,
+.modal__product .product__item-2:hover .product-add-to-cart .product-btn button,
+.modal__product .product__item-3:hover .product-add-to-cart .product-btn button,
+.modal__product .product__item-4:hover .product-add-to-cart .product-btn button,
+.list-view__item-2 .product__item-1:hover .product-add-to-cart .product-btn button,
+.list-view__item-2 .product__item-2:hover .product-add-to-cart .product-btn button,
+.list-view__item-2 .product__item-3:hover .product-add-to-cart .product-btn button,
+.list-view__item-2 .product__item-4:hover .product-add-to-cart .product-btn button,
+.list-view__item-2 .product__item-5:hover .product-add-to-cart .product-btn button {
 	width: 100%;
 	height: 100%;
 	border: 2px solid #0156FF;
@@ -1257,7 +1280,16 @@ a.slide__btn {
 .group__main .group__item-3:hover .product-add-to-cart .product-btn button span::before,
 .group__main .group__item-4:hover .product-add-to-cart .product-btn button span::before,
 .group__main .group__item-5:hover .product-add-to-cart .product-btn button span::before,
-.group__main .group__item-6:hover .product-add-to-cart .product-btn button span::before {
+.group__main .group__item-6:hover .product-add-to-cart .product-btn button span::before,
+.modal__product .product__item-1:hover .product-add-to-cart .product-btn button span::before,
+.modal__product .product__item-2:hover .product-add-to-cart .product-btn button span::before,
+.modal__product .product__item-3:hover .product-add-to-cart .product-btn button span::before,
+.modal__product .product__item-4:hover .product-add-to-cart .product-btn button span::before,
+.list-view__item-2 .product__item-1:hover .product-add-to-cart .product-btn button span::before,
+.list-view__item-2 .product__item-2:hover .product-add-to-cart .product-btn button span::before,
+.list-view__item-2 .product__item-3:hover .product-add-to-cart .product-btn button span::before,
+.list-view__item-2 .product__item-4:hover .product-add-to-cart .product-btn button span::before,
+.list-view__item-2 .product__item-5:hover .product-add-to-cart .product-btn button span::before {
 	content: url('../img/svg/cart.svg');
 }
 
@@ -1646,6 +1678,7 @@ a.slide__btn {
 .list-view__item-2 {
 	display: flex;
 	flex-direction: row;
+	max-height: 346px;
 }
 
 .list-view__item-1 {
@@ -1681,7 +1714,10 @@ a.slide__btn {
 .list-view__item-2 .product__item-4:hover,
 .list-view__item-2 .product__item-5:hover {
 	height: 400px;
+	max-height: 400px;
 	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.14);
+	z-index: 9;
+	background-color: #FFF;
 }
 
 .list-view__item-2 .product__item-1:hover .hovered__icon,
@@ -1757,6 +1793,7 @@ a.slide__btn {
 .list-view__monitor .list-view__item-2 .product__item-4:hover,
 .list-view__monitor .list-view__item-2 .product__item-5:hover {
 	height: 400px;
+	max-height: 400px;
 	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.14);
 }
 
