@@ -1,0 +1,395 @@
+@import url(null.css);
+@import url(fonts.css);
+
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+
+/* ------------------------------ */
+.block {
+	padding: 30px;
+	display: inline-block;
+	background-color: #7a956b;
+	margin: 0px 0px 20px 0px;
+}
+
+/*
+Обращение к дочернему элементу, 
+при состоянии ("при наведении") родителя 
+*/
+/*
+.block:hover .link {
+
+}
+*/
+.link {
+	color: yellow;
+}
+
+/* Псевдоклассы */
+/* Псевдоклассы состояния */
+
+/* Срабатывает для посещенных ссылок */
+.link:visited {
+	color: yellowgreen;
+}
+
+/*
+Замечание: Из-за причин приватности, 
+браузеры строго ограничивают стили, которые вы 
+можете применить к элементу, используя этот псевдо-класс:
+только color, background-color, border-color,
+border-bottom-color, border-left-color, border-right-color,
+border-top-color, outline-color, column-rule-color, 
+fill и stroke. Заметьте также, что альфа-канал будет 
+игнорироваться: будет использоваться альфа-канал, 
+используемый для непосещённых ссылок вместо него 
+(но если прозрачность - 0, то в этот случае 
+игнорируется весь цвет, и один из используемых 
+стилей для непосещённых ссылок).
+*/
+
+/* 
+:hover
+Срабатывает при наведении на элемент, 
+часто применяется применяется как для ссылок так
+и для любого другого элемента.
+*/
+.link:hover {
+	color: red;
+}
+
+/*
+:focus
+Срабатывает при получении элементом фокуса. 
+Часто применяется к елементам форм. Например инпутам.
+*/
+.link:focus {
+	color: blue;
+	outline: none;
+}
+
+/*
+:active
+Срабатывает при нажатии на элемент. 
+В основном применяется к ссылкам и кнопкам.
+*/
+.link:active {
+	color: #000;
+}
+
+/*
+.button {
+	border-radius: 5px;
+	padding: 20px 30px;
+	color: #fff;
+	background-color: yellowgreen;
+	box-shadow: 0px 8px 0px rgb(55, 73, 18);
+	position: relative;
+	top: 0;
+}
+.button:hover {
+	background-color: rgb(172, 228, 61);
+}
+.button:active {
+	top: 4px;
+	box-shadow: 0px 4px 0px rgb(55, 73, 18);
+}
+*/
+
+/*
+:target
+Срабатывает когда элемент является объектом 
+на который ссылаются
+*/
+
+.window {
+	padding: 20px;
+	color: #fff;
+	display: none;
+	background-color: #77608d;
+}
+
+.window:target {
+	display: block;
+}
+
+/* Псевдоклассы положения в коде */
+
+.text {
+	margin: 0px 0px 50px 0px;
+}
+
+.text p {
+	/* margin: 0px 0px 20px 0px; */
+}
+
+.list {}
+
+.list li {
+	margin: 0px 0px 20px 0px;
+}
+
+/*
+:first-child
+Обращение к первому элементу в блоке
+*/
+/*
+.text p:first-child {
+	color: red;
+}
+*/
+/* Первый в блоке тег P, даже если выше 
+него есть другие теги */
+/*
+.text p:first-of-type {
+	color: red;
+}
+*/
+
+/* Любой оъект который первый внутри родителя */
+/*
+.text *:first-child {
+	color: red;
+}
+*/
+
+/*
+:last-child
+Обращение к последнему элементу в блоке
+*/
+/*
+.text p:last-child {
+	color: red;
+}
+*/
+/* Последний в блоке тег P, 
+если ниже него ничего нет  */
+/*
+.text p:last-of-type {
+ color: red;
+}
+*/
+/* Убираем лишний отступ. Вариант №1 */
+/*
+.text *:last-child {
+	margin-bottom: 0;
+}
+*/
+/*
+:nth-child(порядковый номер элемента)
+Обращение к конкретным элементам в блоке
+*/
+
+/* odd - нечетные */
+/* even - четные */
+.text p:nth-child(odd) {
+	color: red;
+}
+
+.text p:nth-child(2):hover {
+	color: green;
+}
+
+/* Убираем лишний отступ. Вариант №2 
+ для любых объектов внутри объектов с классом .text
+ добавить внешний отступ 20px вниз, 
+ но кроме последнего объекта
+*/
+.text *:not(:last-child) {
+	margin: 0px 0px 20px 0px;
+}
+
+/*===============================================*/
+/*
+Псевдоэлемент ::first-line задает стиль первой 
+строки форматированного текста. 
+Длина этой строки зависит от многих факторов, 
+таких как используемый шрифт, 
+размер окна браузера, ширина блока, языка и т.д. 
+В правилах стиля допустимо 
+использовать только свойства, относящиеся к шрифту, 
+изменению цвета текста и фона.
+*/
+.content {
+	margin: 0px 0px 30px 0px;
+}
+
+.content::first-line {
+	/* color: red; */
+}
+
+/*
+Псевдоэлемент ::first-letter определяет стиль первого
+ символа в тексте элемента, 
+к которому добавляется. 
+К этому псевдоэлементу могут применяться только
+ стилевые свойства, 
+связанные со свойствами шрифта, полями, отступами,
+ границами, цветом и фоном.
+*/
+/*
+.content {
+	text-indent: 30px;
+}
+.content::first-letter {
+	color: red;
+	font-size: 80px;
+}
+*/
+
+/*
+::before, ::after - СТРОЧНЫЕ !!!!
+использование content ОБЯЗАТЕЛЬНО! 
+
+*/
+/*
+.title {
+	margin: 0px 0px 40px 0px;
+	font-size: 40px;
+	font-weight: 900;
+	display: inline-block;
+}
+.title::after {
+	content: "";
+	display: block;
+	background-color: #34c759;
+	height: 2px;
+	width: 56px;
+	margin: 15px 0px 0px 0px;
+}
+
+.content::before {
+	content: "";
+}
+.content::after {
+	content: "";
+}
+
+.list {
+	margin: 0px 0px 30px 0px;
+}
+.list li {
+	padding: 0px 0px 0px 30px;
+}
+.list li::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	display: inline-block;
+	vertical-align: top;
+	margin: 4px 10px 0px -30px;
+	border-radius: 50%;
+}
+.list li:hover::before {
+	background-color: blue;
+}
+
+.num-list {
+	counter-reset: item;
+	margin: 0px 0px 30px 0px;
+}
+.num-list li:not(:last-child) {
+	margin: 0px 0px 20px 0px;
+}
+.num-list li::before {
+	counter-increment: item;
+	content: counter(item) ")";
+	display: inline-block;
+	vertical-align: top;
+	color: red;
+	margin: 0px 20px 0px 0px;
+}
+.num-list li::before,
+.num-list li::after {
+}
+*/
+
+/*
+.item *:not(:last-child) {
+	margin-bottom: 30px;
+}
+*/
+/*
+.item {
+}
+
+.item *:last-child {
+	margin-bottom: 0px;
+}
+
+.item__title {
+	font-size: 50px;
+	margin: 0px 0px 30px 0px;
+}
+.item__text {
+	margin: 0px 0px 20px 0px;
+}
+.item__link {
+	margin: 0px 0px 30px 0px;
+	display: inline-block;
+}
+*/
+/*
+.test-list {
+}
+.test-list li {
+	background: url("../img/01.png") top right / 50px no-repeat;
+	padding: 0px 60px 0px 0px;
+}
+.test-list li:not(:last-child) {
+	margin: 0px 0px 20px 0px;
+}
+*/
+
+.items {
+	background: #02133c;
+	padding: 50px 0;
+}
+
+.items__container {
+	max-width: 1020px;
+	margin: 0px auto;
+}
+
+.items__list {
+	font-size: 0;
+	margin: 0px -12px;
+}
+
+.item {
+	display: inline-block;
+	width: 25%;
+	padding: 0px 12px;
+	vertical-align: top;
+}
+
+.item__image {
+	display: inline-block;
+	width: 76px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.item__body {
+	padding: 0px 0px 0px 11px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.item__title {
+	color: #c40b0b;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+}
+
+.item__text {
+	color: #f5f5f5;
+	font-size: 16px;
+	line-height: 24px;
+	max-width: 130px;
+}
