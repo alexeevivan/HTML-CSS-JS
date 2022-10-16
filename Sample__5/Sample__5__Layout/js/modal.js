@@ -42,20 +42,20 @@
 // }
 
 
-$(".hovered__menu").click(function () {
-	$(".modal__menu").addClass("visible");
+$(".open-menu").click(function () {
+	$(".modal-menu").addClass("visible");
 });
 
 $(".hovered__cart").click(function () {
-	$(".modal__cart").addClass("visible");
+	$(".modal-cart").addClass("visible");
 });
 
 $(".hovered__account").click(function () {
-	$(".modal__account").addClass("visible");
+	$(".modal-account").addClass("visible");
 });
 
 // $(".hovered__cart-close").click(function () {
-// 	$(".modal__cart").removeClass("visible");
+// 	$(".modal-cart").removeClass("visible");
 // });
 
 // $(".hovered__account-close").click(function () {
@@ -64,21 +64,21 @@ $(".hovered__account").click(function () {
 
 $(document).click(function (event) {
 	//if you click on anything except the modal itself or the "open modal" link, close the modal
-	if (!$(event.target).closest(".modal__menu,.hovered__menu").length) {
-		$("body").find(".modal__menu").removeClass("visible");
+	if (!$(event.target).closest(".modal-menu,.open-menu").length) {
+		$("body").find(".modal-menu").removeClass("visible");
 	}
 });
 
 $(document).click(function (event) {
 	//if you click on anything except the modal itself or the "open modal" link, close the modal
-	if (!$(event.target).closest(".modal__cart,.hovered__cart").length) {
-		$("body").find(".modal__cart").removeClass("visible");
+	if (!$(event.target).closest(".modal-cart,.hovered__cart").length) {
+		$("body").find(".modal-cart").removeClass("visible");
 	}
 });
 
 $(document).click(function (event) {
 	//if you click on anything except the modal itself or the "open modal" link, close the modal
-	if (!$(event.target).closest(".modal__account,.hovered__account").length) {
-		$("body").find(".modal__account").removeClass("visible");
+	if (!$(event.target).closest(".modal-account,.hovered__account").length) {
+		$("body").find(".modal-account").removeClass("visible");
 	}
 });
