@@ -43,15 +43,15 @@
 
 
 $(".open-menu").click(function () {
-	$(".modal-menu").addClass("visible");
+	$(".modal-menu").addClass("visible-menu");
 });
 
-$(".hovered__cart").click(function () {
-	$(".modal-cart").addClass("visible");
+$(".open-cart").click(function () {
+	$(".modal-cart").addClass("visible-cart");
 });
 
-$(".hovered__account").click(function () {
-	$(".modal-account").addClass("visible");
+$(".user-profile").click(function () {
+	$(".modal-account").addClass("visible-account");
 });
 
 // $(".hovered__cart-close").click(function () {
@@ -65,20 +65,20 @@ $(".hovered__account").click(function () {
 $(document).click(function (event) {
 	//if you click on anything except the modal itself or the "open modal" link, close the modal
 	if (!$(event.target).closest(".modal-menu,.open-menu").length) {
-		$("body").find(".modal-menu").removeClass("visible");
+		$("body").find(".modal-menu").removeClass("visible-menu");
 	}
 });
 
 $(document).click(function (event) {
 	//if you click on anything except the modal itself or the "open modal" link, close the modal
-	if (!$(event.target).closest(".modal-cart,.hovered__cart").length) {
-		$("body").find(".modal-cart").removeClass("visible");
+	if (!$(event.target).closest(".modal-cart,.open-cart").length) {
+		$("body").find(".modal-cart").removeClass("visible-cart");
 	}
 });
 
 $(document).click(function (event) {
 	//if you click on anything except the modal itself or the "open modal" link, close the modal
-	if (!$(event.target).closest(".modal-account,.hovered__account").length) {
-		$("body").find(".modal-account").removeClass("visible");
+	if (!$(event.target).closest(".modal-account,.user-profile").length) {
+		$("body").find(".modal-account").removeClass("visible-account");
 	}
 });

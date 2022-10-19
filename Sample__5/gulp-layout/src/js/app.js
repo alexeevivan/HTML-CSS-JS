@@ -6,44 +6,37 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 
 // Modal windows
 
-$(".hovered__menu").click(function () {
-	$(".modal__menu").addClass("visible");
+$(".open-menu").click(function () {
+	$(".modal-menu").addClass("visible-menu");
 });
 
-$(".hovered__cart").click(function () {
-	$(".modal__cart").addClass("visible");
+$(".open-cart").click(function () {
+	$(".modal-cart").addClass("visible-cart");
 });
 
-$(".hovered__account").click(function () {
-	$(".modal__account").addClass("visible");
+$(".user-profile").click(function () {
+	$(".modal-account").addClass("visible-account");
 });
 
-// $(".hovered__cart-close").click(function () {
-// 	$(".modal__cart").removeClass("visible");
-// });
-
-// $(".hovered__account-close").click(function () {
-// 	$(".hovered__account").removeClass("visible");
-// });
 
 $(document).click(function (event) {
 	//if you click on anything except the modal itself or the "open modal" link, close the modal
-	if (!$(event.target).closest(".modal__menu,.hovered__menu").length) {
-		$("body").find(".modal__menu").removeClass("visible");
+	if (!$(event.target).closest(".modal-menu,.open-menu").length) {
+		$("body").find(".modal-menu").removeClass("visible-menu");
 	}
 });
 
 $(document).click(function (event) {
 	//if you click on anything except the modal itself or the "open modal" link, close the modal
-	if (!$(event.target).closest(".modal__cart,.hovered__cart").length) {
-		$("body").find(".modal__cart").removeClass("visible");
+	if (!$(event.target).closest(".modal-cart,.open-cart").length) {
+		$("body").find(".modal-cart").removeClass("visible-cart");
 	}
 });
 
 $(document).click(function (event) {
 	//if you click on anything except the modal itself or the "open modal" link, close the modal
-	if (!$(event.target).closest(".modal__account,.hovered__account").length) {
-		$("body").find(".modal__account").removeClass("visible");
+	if (!$(event.target).closest(".modal-account,.user-profile").length) {
+		$("body").find(".modal-account").removeClass("visible-account");
 	}
 });
 
@@ -134,7 +127,7 @@ $('.slider').each(function () {
 
 // Swiper Slider
 
-const swiper = new Swiper('.feedback-slider', {
+new Swiper('.feedback-slider', {
 	navigation: {
 		nextEl: '.feedback-slider-button-next',
 		prevEl: '.feedback-slider-button-prev'
@@ -144,4 +137,34 @@ const swiper = new Swiper('.feedback-slider', {
 		clickable: true,
 	},
 	simulateTouch: false,
+	loop: true,
 });
+
+
+// Color-Picker
+
+$(".color__block-1").click(function () {
+	$(".active-block-1").addClass("active");
+	$(".color__block-1").addClass("hide");
+});
+
+$(".color__block-2").click(function () {
+	$(".active-block-2").addClass("active");
+	$(".color__block-2").addClass("hide");
+});
+
+$(document).click(function (event) {
+	//if you click on anything except the modal itself or the "open modal" link, close the modal
+	if (!$(event.target).closest(".active-block-1,.color__block-1").length) {
+		$("body").find(".active-block-1").removeClass("active");
+		$("body").find(".color__block-1").removeClass("hide");
+	}
+});
+
+// $(document).click(function (event) {
+// 	//if you click on anything except the modal itself or the "open modal" link, close the modal
+// 	if (!$(event.target).closest(".active-block-2,.color__block-2").length) {
+// 		$("body").find(".active-block-2").removeClass("active");
+// 		$("body").find(".color__block-2").removeClass("hide");
+// 	}
+// });
