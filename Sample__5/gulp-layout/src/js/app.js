@@ -160,11 +160,3 @@ $(document).click(function (event) {
 		$("body").find(".color__block-1").removeClass("hide");
 	}
 });
-
-// $(document).click(function (event) {
-// 	//if you click on anything except the modal itself or the "open modal" link, close the modal
-// 	if (!$(event.target).closest(".active-block-2,.color__block-2").length) {
-// 		$("body").find(".active-block-2").removeClass("active");
-// 		$("body").find(".color__block-2").removeClass("hide");
-// 	}
-// });
