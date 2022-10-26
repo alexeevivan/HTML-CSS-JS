@@ -1,11 +1,11 @@
 jQuery(function ($) {
 	// resize the slide-read-more Div
 	var box = $(".slide-read-more");
-	var minimumHeight = 250; // max height in pixels
+	var minimumHeight = 275; // max height in pixels
 	var initialHeight = box.innerHeight();
 	// reduce the text if it's longer than 200px
 	if (initialHeight < minimumHeight) {
-		box.css('height', minimumHeight);
+		box.css('height', initialHeight);
 		$(".read-more-button").show();
 	}
 

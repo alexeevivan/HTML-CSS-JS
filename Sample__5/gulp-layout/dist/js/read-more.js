@@ -32,11 +32,3 @@ jQuery(function ($) {
 		});
 	}
 });
-
-// $(".read-more-button").click(function () {
-// 	$(".slide-read-more").addClass("read-more__visible");
-// });
-
-// $(".slide-read-more-buttonn").click(function () {
-// 	$(".slide-read-more").removeClass("read-more__visible");
-// });
