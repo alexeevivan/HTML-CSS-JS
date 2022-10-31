@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scal=1.0,user-scalable=0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221026063945" type="text/css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221026063945" type="text/css" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20221031075214" type="text/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221031075214" type="text/css" />
 
 	<title>
 		Catalog
@@ -117,7 +117,7 @@
 			<div class="information">
 				<div class="information__link">
 					<div>
-						<a href="#" class="logo">
+						<a href="index.html" class="logo">
 							<svg width="85" height="69" viewBox="0 0 85 69" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -211,26 +211,28 @@
 				<p>
 					<span>2</span> item in cart
 				</p>
-				<div class="hovered__next">
+				<div class="modal-cart__hovered-next">
 					<a href="#">
 						View or Edit Your Cart
 					</a>
 				</div>
-				<div class="hovered__items">
-					<div class="hovered__item-1">
-						<div class="hovered__total">
+				<div class="modal-cart__hovered-items">
+					<div class="modal-cart__item-1">
+						<div class="modal-cart__total">
 							<p>
 								<span>1</span> x
 							</p>
 						</div>
-						<div class="hovered__product-img"></div>
-						<div class="hovered__specs">
+						<div class="modal-cart__product-img">
+							<img src="img/image_30.png" height="65" width="65" alt="cart item">
+						</div>
+						<div class="modal-cart__specs">
 							<p>
 								EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
 							</p>
 						</div>
 						<div class="hovered__icon">
-							<div class="hovered__icon-top">
+							<div class="hovered__top">
 								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
 									xmlns="http://www.w3.org/2000/svg">
 									<circle cx="10" cy="10" r="9.25" fill="white" stroke="#CACDD8" stroke-width="1.5" />
@@ -238,7 +240,7 @@
 									<path d="M13.5 7L7 13.5" stroke="#A2A6B0" stroke-linecap="round" />
 								</svg>
 							</div>
-							<div class="hovered__icon-bottom">
+							<div class="hovered__bottom">
 								<svg width="20" height="21" viewBox="0 0 20 21" fill="none"
 									xmlns="http://www.w3.org/2000/svg">
 									<circle cx="10" cy="10.9326" r="9.25" fill="white" stroke="#CACDD8"
@@ -250,20 +252,22 @@
 							</div>
 						</div>
 					</div>
-					<div class="hovered__item-2">
-						<div class="hovered__total">
+					<div class="modal-cart__item-2">
+						<div class="modal-cart__total">
 							<p>
 								<span>1</span> x
 							</p>
 						</div>
-						<div class="hovered__product-img"></div>
-						<div class="hovered__specs">
+						<div class="modal-cart__product-img">
+							<img src="img/image_30.png" height="65" width="65" alt="cart item">
+						</div>
+						<div class="modal-cart__specs">
 							<p>
 								EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
 							</p>
 						</div>
 						<div class="hovered__icon">
-							<div class="hovered__icon-top">
+							<div class="hovered__top">
 								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
 									xmlns="http://www.w3.org/2000/svg">
 									<circle cx="10" cy="10" r="9.25" fill="white" stroke="#CACDD8" stroke-width="1.5" />
@@ -271,7 +275,7 @@
 									<path d="M13.5 7L7 13.5" stroke="#A2A6B0" stroke-linecap="round" />
 								</svg>
 							</div>
-							<div class="hovered__icon-bottom">
+							<div class="hovered__bottom">
 								<svg width="20" height="21" viewBox="0 0 20 21" fill="none"
 									xmlns="http://www.w3.org/2000/svg">
 									<circle cx="10" cy="10.9326" r="9.25" fill="white" stroke="#CACDD8"
@@ -284,18 +288,18 @@
 						</div>
 					</div>
 				</div>
-				<div class="hovered__amount">
+				<div class="modal-cart__hovered-amount">
 					<p>
 						<span>Subtotal:</span> $499.00
 					</p>
 				</div>
-				<div class="hovered__payment">
-					<div class="hovered__link-checkout">
+				<div class="modal-cart__payment">
+					<div class="modal-cart__link-checkout">
 						<a href="#">
 							Go to Checkout
 						</a>
 					</div>
-					<div class="hovered__link-pay">
+					<div class="modal-cart__link-to-pay">
 						<a href="#">
 							Check out with
 						</a>
@@ -351,42 +355,42 @@
 				</ul>
 			</div>
 			<div class="modal-menu">
-				<div class="modal__top">
-					<div class="modal__list">
+				<div class="modal-menu__top-side">
+					<div class="modal-menu__list">
 						<ul>
-							<li class="dropdown-menu">
+							<li class="modal-menu__dropdown-menu">
 								Everyday Use Notebooks<svg width="5" height="7" viewBox="0 0 5 7" fill="none"
 									xmlns="http://www.w3.org/2000/svg">
 									<path d="M1 1L3 3.13407L1 5.26814" stroke="black" stroke-width="1.6"
 										stroke-linecap="round" />
 								</svg>
-								<div class="dropdown-menu__content">
-									<div class="dropdown-menu__items">
-										<div class="modal__series">
+								<div class="modal-menu__dropdown-menu_content">
+									<div class="modal-menu__dropdown-menu_items">
+										<div class="modal-menu__modal-series">
 											<ul>
-												<li class="dropdown-menu__item-1">
+												<li class="modal-menu__dropdown-menu_item-1">
 													MSI Workstation Series<svg width="5" height="7" viewBox="0 0 5 7"
 														fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M1 1L3 3.13407L1 5.26814" stroke="black"
 															stroke-width="1.6" stroke-linecap="round" />
 													</svg>
-													<div class="item-1__submenu">
-														<div class="modal__model">
+													<div class="modal-menu__item-1-submenu">
+														<div class="modal-menu__modal-model">
 															<ul>
-																<li class="item-1__point-1">
+																<li class="modal-menu__item-1-point-1">
 																	MSI WS Series <span>(12)</span>
 																</li>
-																<li class="item-1__point-2">
+																<li class="modal-menu__item-1-point-2">
 																	MSI WT Series <span>(31)</span>
 																</li>
-																<li class="item-1__point-3">
+																<li class="modal-menu__item-1-point-3">
 																	MSI WE Series <span>(7)</span>
 																</li>
 															</ul>
 														</div>
 													</div>
 												</li>
-												<li class="dropdown-menu__item-2">
+												<li class="modal-menu__dropdown-menu-item-2">
 													MSI Prestige Series
 												</li>
 											</ul>
@@ -414,10 +418,10 @@
 							</li>
 						</ul>
 					</div>
-					<div class="modal__product">
+					<div class="modal-product">
 						<div class="product__item-1">
 							<div class="hovered__icon">
-								<div class="hovered__icon-top">
+								<div class="hovered__top">
 									<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<circle cx="15" cy="15" r="14" stroke="#A2A6B0" stroke-width="2" />
@@ -426,7 +430,7 @@
 											stroke="#A2A6B0" stroke-width="2" />
 									</svg>
 								</div>
-								<div class="hovered__icon-bottom">
+								<div class="hovered__bottom">
 									<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<circle cx="15" cy="15" r="14" stroke="#A2A6B0" stroke-width="2" />
@@ -441,28 +445,28 @@
 							</div>
 							<div class="availability">
 								<span class="in-stock">
-									In stock
+									in stock
 								</span>
 							</div>
 							<div class="product-image">
 							</div>
 							<div class="product-review">
-								<div class="rating-area">
-									<span class="reviews-count">
+								<div class="product-review__rating-area">
+									<span class="product-review__reviews-count">
 										Reviews (4)
 									</span>
-									<fieldset class="rating">
-										<div class="rating__group">
-											<input class="rating__star" type="radio" name="tablet"
+									<fieldset class="product-review__rating">
+										<div class="product-review__rating-group">
+											<input class="product-review__rating-star" type="radio" name="tablet"
 												aria-label="Excellent" value="1">
-											<input class="rating__star" type="radio" name="tablet" aria-label="Good"
-												value="2" checked>
-											<input class="rating__star" type="radio" name="tablet" aria-label="Normal"
-												value="3">
-											<input class="rating__star" type="radio" name="tablet"
+											<input class="product-review__rating-star" type="radio" name="tablet"
+												aria-label="Good" value="2" checked>
+											<input class="product-review__rating-star" type="radio" name="tablet"
+												aria-label="Normal" value="3">
+											<input class="product-review__rating-star" type="radio" name="tablet"
 												aria-label="Not enough good" value="4">
-											<input class="rating__star" type="radio" name="tablet" aria-label="Awful"
-												value="5">
+											<input class="product-review__rating-star" type="radio" name="tablet"
+												aria-label="Awful" value="5">
 										</div>
 									</fieldset>
 								</div>
@@ -492,7 +496,7 @@
 						</div>
 						<div class="product__item-2">
 							<div class="hovered__icon">
-								<div class="hovered__icon-top">
+								<div class="hovered__top">
 									<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<circle cx="15" cy="15" r="14" stroke="#A2A6B0" stroke-width="2" />
@@ -501,7 +505,7 @@
 											stroke="#A2A6B0" stroke-width="2" />
 									</svg>
 								</div>
-								<div class="hovered__icon-bottom">
+								<div class="hovered__bottom">
 									<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<circle cx="15" cy="15" r="14" stroke="#A2A6B0" stroke-width="2" />
@@ -516,28 +520,28 @@
 							</div>
 							<div class="availability">
 								<span class="in-stock">
-									In stock
+									in stock
 								</span>
 							</div>
 							<div class="product-image">
 							</div>
 							<div class="product-review">
-								<div class="rating-area">
-									<span class="reviews-count">
+								<div class="product-review__rating-area">
+									<span class="product-review__reviews-count">
 										Reviews (4)
 									</span>
-									<fieldset class="rating">
-										<div class="rating__group">
-											<input class="rating__star" type="radio" name="tablet"
+									<fieldset class="product-review__rating">
+										<div class="product-review__rating-group">
+											<input class="product-review__rating-star" type="radio" name="tablet"
 												aria-label="Excellent" value="1">
-											<input class="rating__star" type="radio" name="tablet" aria-label="Good"
-												value="2" checked>
-											<input class="rating__star" type="radio" name="tablet" aria-label="Normal"
-												value="3">
-											<input class="rating__star" type="radio" name="tablet"
+											<input class="product-review__rating-star" type="radio" name="tablet"
+												aria-label="Good" value="2" checked>
+											<input class="product-review__rating-star" type="radio" name="tablet"
+												aria-label="Normal" value="3">
+											<input class="product-review__rating-star" type="radio" name="tablet"
 												aria-label="Not enough good" value="4">
-											<input class="rating__star" type="radio" name="tablet" aria-label="Awful"
-												value="5">
+											<input class="product-review__rating-star" type="radio" name="tablet"
+												aria-label="Awful" value="5">
 										</div>
 									</fieldset>
 								</div>
@@ -567,7 +571,7 @@
 						</div>
 						<div class="product__item-3">
 							<div class="hovered__icon">
-								<div class="hovered__icon-top">
+								<div class="hovered__top">
 									<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<circle cx="15" cy="15" r="14" stroke="#A2A6B0" stroke-width="2" />
@@ -576,7 +580,7 @@
 											stroke="#A2A6B0" stroke-width="2" />
 									</svg>
 								</div>
-								<div class="hovered__icon-bottom">
+								<div class="hovered__bottom">
 									<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<circle cx="15" cy="15" r="14" stroke="#A2A6B0" stroke-width="2" />
@@ -591,28 +595,28 @@
 							</div>
 							<div class="availability">
 								<span class="in-stock">
-									In stock
+									in stock
 								</span>
 							</div>
 							<div class="product-image">
 							</div>
 							<div class="product-review">
-								<div class="rating-area">
-									<span class="reviews-count">
+								<div class="product-review__rating-area">
+									<span class="product-review__reviews-count">
 										Reviews (4)
 									</span>
-									<fieldset class="rating">
-										<div class="rating__group">
-											<input class="rating__star" type="radio" name="tablet"
+									<fieldset class="product-review__rating">
+										<div class="product-review__rating-group">
+											<input class="product-review__rating-star" type="radio" name="tablet"
 												aria-label="Excellent" value="1">
-											<input class="rating__star" type="radio" name="tablet" aria-label="Good"
-												value="2" checked>
-											<input class="rating__star" type="radio" name="tablet" aria-label="Normal"
-												value="3">
-											<input class="rating__star" type="radio" name="tablet"
+											<input class="product-review__rating-star" type="radio" name="tablet"
+												aria-label="Good" value="2" checked>
+											<input class="product-review__rating-star" type="radio" name="tablet"
+												aria-label="Normal" value="3">
+											<input class="product-review__rating-star" type="radio" name="tablet"
 												aria-label="Not enough good" value="4">
-											<input class="rating__star" type="radio" name="tablet" aria-label="Awful"
-												value="5">
+											<input class="product-review__rating-star" type="radio" name="tablet"
+												aria-label="Awful" value="5">
 										</div>
 									</fieldset>
 								</div>
@@ -642,7 +646,7 @@
 						</div>
 						<div class="product__item-4">
 							<div class="hovered__icon">
-								<div class="hovered__icon-top">
+								<div class="hovered__top">
 									<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<circle cx="15" cy="15" r="14" stroke="#A2A6B0" stroke-width="2" />
@@ -651,7 +655,7 @@
 											stroke="#A2A6B0" stroke-width="2" />
 									</svg>
 								</div>
-								<div class="hovered__icon-bottom">
+								<div class="hovered__bottom">
 									<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<circle cx="15" cy="15" r="14" stroke="#A2A6B0" stroke-width="2" />
@@ -666,28 +670,28 @@
 							</div>
 							<div class="availability">
 								<span class="in-stock">
-									In stock
+									in stock
 								</span>
 							</div>
 							<div class="product-image">
 							</div>
 							<div class="product-review">
-								<div class="rating-area">
-									<span class="reviews-count">
+								<div class="product-review__rating-area">
+									<span class="product-review__reviews-count">
 										Reviews (4)
 									</span>
-									<fieldset class="rating">
-										<div class="rating__group">
-											<input class="rating__star" type="radio" name="tablet"
+									<fieldset class="product-review__rating">
+										<div class="product-review__rating-group">
+											<input class="product-review__rating-star" type="radio" name="tablet"
 												aria-label="Excellent" value="1">
-											<input class="rating__star" type="radio" name="tablet" aria-label="Good"
-												value="2" checked>
-											<input class="rating__star" type="radio" name="tablet" aria-label="Normal"
-												value="3">
-											<input class="rating__star" type="radio" name="tablet"
+											<input class="product-review__rating-star" type="radio" name="tablet"
+												aria-label="Good" value="2" checked>
+											<input class="product-review__rating-star" type="radio" name="tablet"
+												aria-label="Normal" value="3">
+											<input class="product-review__rating-star" type="radio" name="tablet"
 												aria-label="Not enough good" value="4">
-											<input class="rating__star" type="radio" name="tablet" aria-label="Awful"
-												value="5">
+											<input class="product-review__rating-star" type="radio" name="tablet"
+												aria-label="Awful" value="5">
 										</div>
 									</fieldset>
 								</div>
@@ -717,7 +721,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="modal__bottom">
+				<div class="modal-menu__down-side">
 					<img src="img/logo/image_logo_1.jpg" alt="roccat-logo">
 					<img src="img/logo/image_logo_2.jpg" alt="msi-logo">
 					<img src="img/logo/image_logo_3.jpg" alt="razer-logo">
@@ -728,9 +732,9 @@
 				</div>
 			</div>
 			<div class="catalog-container">
-				<section class="container-ad">
+				<section class="catalog-container__ad">
 					<img src="img/catalog/catalog-ad.jpg" alt="advertising">
-					<div class="container-ad__breadcrumb">
+					<div class="catalog-container__breadcrumb">
 						<ul>
 							<li>
 								<a href="#">
@@ -760,11 +764,11 @@
 						</ul>
 					</div>
 				</section>
-				<section class="container-list">
+				<section class="catalog-container__list">
 					<h1>
 						MSI PS Series <span>(20)</span>
 					</h1>
-					<div class="container-list__filter">
+					<div class="catalog-container__filter">
 						<div class="aside-left">
 							<a href="#">
 								Back
@@ -800,7 +804,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="container-list__main">
+					<div class="catalog-container__main">
 						<div class="aside-left">
 							<div class="aside-left__filter-list">
 								<header class="aside-left__header">
@@ -988,7 +992,7 @@
 										Compare Products
 									</h3>
 								</header>
-								<div class="compare__info">
+								<div class="aside-left__compare-info">
 									<span>
 										You have no items to compare.
 									</span>
@@ -1000,7 +1004,7 @@
 										My Wish List
 									</h3>
 								</header>
-								<div class="wish-list__info">
+								<div class="aside-left__wish-list-info">
 									<span>
 										You have no items in your wish list.
 									</span>
@@ -1058,7 +1062,7 @@
 										<div class="swiper-slide catalog-grid-view">
 											<div class="aside-right__items aside-right__item-1">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1068,7 +1072,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1084,28 +1088,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -1135,7 +1140,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-2">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1145,7 +1150,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1161,28 +1166,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -1212,7 +1218,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-3">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1222,7 +1228,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1238,28 +1244,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -1289,7 +1296,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-4">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1299,7 +1306,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1315,28 +1322,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -1366,7 +1374,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-5">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1376,7 +1384,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1392,28 +1400,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -1443,7 +1452,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-6">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1453,7 +1462,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1469,28 +1478,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -1520,7 +1530,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-7">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1530,7 +1540,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1546,28 +1556,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -1597,7 +1608,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-8">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1607,7 +1618,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1623,28 +1634,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -1674,7 +1686,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-9">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1684,7 +1696,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1700,28 +1712,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -1751,7 +1764,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-10">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1761,7 +1774,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1777,28 +1790,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -1828,7 +1842,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-11">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1838,7 +1852,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1854,28 +1868,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -1905,7 +1920,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-12">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1915,7 +1930,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1931,28 +1946,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -1982,7 +1998,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-13">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -1992,7 +2008,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2008,28 +2024,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -2059,7 +2076,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-14">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2069,7 +2086,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2085,28 +2102,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -2136,7 +2154,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-15">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2146,7 +2164,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2162,28 +2180,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -2213,7 +2232,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-16">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2223,7 +2242,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2239,28 +2258,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -2290,7 +2310,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-17">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2300,7 +2320,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2316,28 +2336,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -2367,7 +2388,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-18">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2377,7 +2398,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2393,28 +2414,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -2444,7 +2466,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-19">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2454,7 +2476,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2470,28 +2492,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -2521,7 +2544,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-20">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2531,7 +2554,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2547,28 +2570,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -2600,7 +2624,7 @@
 										<div class="swiper-slide catalog-grid-view">
 											<div class="aside-right__items aside-right__item-1">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2610,7 +2634,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2626,28 +2650,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -2677,7 +2702,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-2">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2687,7 +2712,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2703,28 +2728,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -2754,7 +2780,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-3">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2764,7 +2790,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2780,28 +2806,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -2831,7 +2858,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-4">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2841,7 +2868,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2857,28 +2884,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -2908,7 +2936,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-5">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2918,7 +2946,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2934,28 +2962,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -2985,7 +3014,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-6">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -2995,7 +3024,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3011,28 +3040,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -3062,7 +3092,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-7">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3072,7 +3102,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3088,28 +3118,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -3139,7 +3170,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-8">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3149,7 +3180,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3165,28 +3196,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -3216,7 +3248,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-9">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3226,7 +3258,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3242,28 +3274,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -3293,7 +3326,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-10">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3303,7 +3336,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3319,28 +3352,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -3370,7 +3404,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-11">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3380,7 +3414,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3396,28 +3430,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -3447,7 +3482,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-12">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3457,7 +3492,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3473,28 +3508,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -3524,7 +3560,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-13">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3534,7 +3570,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3550,28 +3586,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -3601,7 +3638,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-14">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3611,7 +3648,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3627,28 +3664,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -3678,7 +3716,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-15">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3688,7 +3726,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3704,28 +3742,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -3755,7 +3794,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-16">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3765,7 +3804,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3781,28 +3820,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -3832,7 +3872,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-17">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3842,7 +3882,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3858,28 +3898,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -3909,7 +3950,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-18">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3919,7 +3960,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3935,28 +3976,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -3986,7 +4028,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-19">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -3996,7 +4038,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -4012,28 +4054,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -4063,7 +4106,7 @@
 											</div>
 											<div class="aside-right__items aside-right__item-20">
 												<div class="hovered__icon">
-													<div class="hovered__icon-top">
+													<div class="hovered__top">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -4073,7 +4116,7 @@
 																stroke="#A2A6B0" stroke-width="2" />
 														</svg>
 													</div>
-													<div class="hovered__icon-bottom">
+													<div class="hovered__bottom">
 														<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 															xmlns="http://www.w3.org/2000/svg">
 															<circle cx="15" cy="15" r="14" stroke="#A2A6B0"
@@ -4089,28 +4132,29 @@
 												</div>
 												<div class="availability">
 													<span class="in-stock">
-														In stock
+														in stock
 													</span>
 												</div>
 												<div class="product-image">
 												</div>
 												<div class="product-review">
-													<div class="rating-area">
-														<span class="reviews-count">
+													<div class="product-review__rating-area">
+														<span class="product-review__reviews-count">
 															Reviews (4)
 														</span>
-														<fieldset class="rating">
-															<div class="rating__group">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Excellent" value="1">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Good" value="2" checked>
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Normal" value="3">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Not enough good" value="4">
-																<input class="rating__star" type="radio" name="laptop-2"
-																	aria-label="Awful" value="5">
+														<fieldset class="product-review__rating">
+															<div class="product-review__rating-group">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Excellent" value="1">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Good" value="2" checked>
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Normal" value="3">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Not enough good"
+																	value="4">
+																<input class="product-review__rating-star" type="radio"
+																	name="laptop-2" aria-label="Awful" value="5">
 															</div>
 														</fieldset>
 													</div>
@@ -4148,29 +4192,33 @@
 											<div class="aside-right-list__items list__item-1">
 												<div class="list-item__view">
 													<div class="list-item__product-image">
-														<img src="img/catalog/aside-right__item-16.jpg" width="250"
-															height="250" alt="notebook">
+														<a href="about.html">
+															<img src="img/catalog/aside-right__item-16.jpg" width="250"
+																height="250" alt="notebook">
+														</a>
 													</div>
 													<div class="product-review">
-														<div class="rating-area">
-															<span class="reviews-count">
+														<div class="product-review__rating-area">
+															<span class="product-review__reviews-count">
 																Reviews (4)
 															</span>
-															<fieldset class="rating">
-																<div class="rating__group">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Excellent"
-																		value="1">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Good" value="2"
-																		checked>
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Normal" value="3">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Not enough good"
-																		value="4">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Awful" value="5">
+															<fieldset class="product-review__rating">
+																<div class="product-review__rating-group">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2"
+																		aria-label="Excellent" value="1">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Good"
+																		value="2" checked>
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Normal"
+																		value="3">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2"
+																		aria-label="Not enough good" value="4">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Awful"
+																		value="5">
 																</div>
 															</fieldset>
 														</div>
@@ -4238,7 +4286,7 @@
 												<div class="list-item__intaractive">
 													<div class="availability">
 														<span class="in-stock">
-															In stock
+															in stock
 														</span>
 													</div>
 													<div class="list-item__hovered-icon">
@@ -4279,29 +4327,33 @@
 											<div class="aside-right-list__items list__item-2">
 												<div class="list-item__view">
 													<div class="list-item__product-image">
-														<img src="img/catalog/aside-right__item-17.jpg" width="250"
-															height="250" alt="notebook">
+														<a href="about.html">
+															<img src="img/catalog/aside-right__item-17.jpg" width="250"
+																height="250" alt="notebook">
+														</a>
 													</div>
 													<div class="product-review">
-														<div class="rating-area">
-															<span class="reviews-count">
+														<div class="product-review__rating-area">
+															<span class="product-review__reviews-count">
 																Reviews (4)
 															</span>
-															<fieldset class="rating">
-																<div class="rating__group">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Excellent"
-																		value="1">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Good" value="2"
-																		checked>
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Normal" value="3">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Not enough good"
-																		value="4">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Awful" value="5">
+															<fieldset class="product-review__rating">
+																<div class="product-review__rating-group">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2"
+																		aria-label="Excellent" value="1">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Good"
+																		value="2" checked>
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Normal"
+																		value="3">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2"
+																		aria-label="Not enough good" value="4">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Awful"
+																		value="5">
 																</div>
 															</fieldset>
 														</div>
@@ -4369,7 +4421,7 @@
 												<div class="list-item__intaractive">
 													<div class="availability">
 														<span class="in-stock">
-															In stock
+															in stock
 														</span>
 													</div>
 													<div class="list-item__hovered-icon">
@@ -4410,29 +4462,33 @@
 											<div class="aside-right-list__items list__item-3">
 												<div class="list-item__view">
 													<div class="list-item__product-image">
-														<img src="img/catalog/aside-right__item-18.jpg" width="250"
-															height="250" alt="notebook">
+														<a href="about.html">
+															<img src="img/catalog/aside-right__item-18.jpg" width="250"
+																height="250" alt="notebook">
+														</a>
 													</div>
 													<div class="product-review">
-														<div class="rating-area">
-															<span class="reviews-count">
+														<div class="product-review__rating-area">
+															<span class="product-review__reviews-count">
 																Reviews (4)
 															</span>
-															<fieldset class="rating">
-																<div class="rating__group">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Excellent"
-																		value="1">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Good" value="2"
-																		checked>
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Normal" value="3">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Not enough good"
-																		value="4">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Awful" value="5">
+															<fieldset class="product-review__rating">
+																<div class="product-review__rating-group">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2"
+																		aria-label="Excellent" value="1">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Good"
+																		value="2" checked>
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Normal"
+																		value="3">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2"
+																		aria-label="Not enough good" value="4">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Awful"
+																		value="5">
 																</div>
 															</fieldset>
 														</div>
@@ -4500,7 +4556,7 @@
 												<div class="list-item__intaractive">
 													<div class="availability">
 														<span class="in-stock">
-															In stock
+															in stock
 														</span>
 													</div>
 													<div class="list-item__hovered-icon">
@@ -4541,29 +4597,33 @@
 											<div class="aside-right-list__items list__item-4">
 												<div class="list-item__view">
 													<div class="list-item__product-image">
-														<img src="img/catalog/aside-right__item-19.jpg" width="250"
-															height="250" alt="notebook">
+														<a href="about.html">
+															<img src="img/catalog/aside-right__item-19.jpg" width="250"
+																height="250" alt="notebook">
+														</a>
 													</div>
 													<div class="product-review">
-														<div class="rating-area">
-															<span class="reviews-count">
+														<div class="product-review__rating-area">
+															<span class="product-review__reviews-count">
 																Reviews (4)
 															</span>
-															<fieldset class="rating">
-																<div class="rating__group">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Excellent"
-																		value="1">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Good" value="2"
-																		checked>
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Normal" value="3">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Not enough good"
-																		value="4">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Awful" value="5">
+															<fieldset class="product-review__rating">
+																<div class="product-review__rating-group">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2"
+																		aria-label="Excellent" value="1">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Good"
+																		value="2" checked>
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Normal"
+																		value="3">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2"
+																		aria-label="Not enough good" value="4">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Awful"
+																		value="5">
 																</div>
 															</fieldset>
 														</div>
@@ -4631,7 +4691,7 @@
 												<div class="list-item__intaractive">
 													<div class="availability">
 														<span class="in-stock">
-															In stock
+															in stock
 														</span>
 													</div>
 													<div class="list-item__hovered-icon">
@@ -4674,29 +4734,33 @@
 											<div class="aside-right-list__items list__item-5">
 												<div class="list-item__view">
 													<div class="list-item__product-image">
-														<img src="img/catalog/aside-right__item-16.jpg" width="250"
-															height="250" alt="notebook">
+														<a href="about.html">
+															<img src="img/catalog/aside-right__item-16.jpg" width="250"
+																height="250" alt="notebook">
+														</a>
 													</div>
 													<div class="product-review">
-														<div class="rating-area">
-															<span class="reviews-count">
+														<div class="product-review__rating-area">
+															<span class="product-review__reviews-count">
 																Reviews (4)
 															</span>
-															<fieldset class="rating">
-																<div class="rating__group">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Excellent"
-																		value="1">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Good" value="2"
-																		checked>
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Normal" value="3">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Not enough good"
-																		value="4">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Awful" value="5">
+															<fieldset class="product-review__rating">
+																<div class="product-review__rating-group">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2"
+																		aria-label="Excellent" value="1">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Good"
+																		value="2" checked>
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Normal"
+																		value="3">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2"
+																		aria-label="Not enough good" value="4">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Awful"
+																		value="5">
 																</div>
 															</fieldset>
 														</div>
@@ -4764,7 +4828,7 @@
 												<div class="list-item__intaractive">
 													<div class="availability">
 														<span class="in-stock">
-															In stock
+															in stock
 														</span>
 													</div>
 													<div class="list-item__hovered-icon">
@@ -4805,29 +4869,33 @@
 											<div class="aside-right-list__items list__item-6">
 												<div class="list-item__view">
 													<div class="list-item__product-image">
-														<img src="img/catalog/aside-right__item-17.jpg" width="250"
-															height="250" alt="notebook">
+														<a href="about.html">
+															<img src="img/catalog/aside-right__item-17.jpg" width="250"
+																height="250" alt="notebook">
+														</a>
 													</div>
 													<div class="product-review">
-														<div class="rating-area">
-															<span class="reviews-count">
+														<div class="product-review__rating-area">
+															<span class="product-review__reviews-count">
 																Reviews (4)
 															</span>
-															<fieldset class="rating">
-																<div class="rating__group">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Excellent"
-																		value="1">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Good" value="2"
-																		checked>
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Normal" value="3">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Not enough good"
-																		value="4">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Awful" value="5">
+															<fieldset class="product-review__rating">
+																<div class="product-review__rating-group">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2"
+																		aria-label="Excellent" value="1">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Good"
+																		value="2" checked>
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Normal"
+																		value="3">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2"
+																		aria-label="Not enough good" value="4">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Awful"
+																		value="5">
 																</div>
 															</fieldset>
 														</div>
@@ -4895,7 +4963,7 @@
 												<div class="list-item__intaractive">
 													<div class="availability">
 														<span class="in-stock">
-															In stock
+															in stock
 														</span>
 													</div>
 													<div class="list-item__hovered-icon">
@@ -4936,29 +5004,33 @@
 											<div class="aside-right-list__items list__item-7">
 												<div class="list-item__view">
 													<div class="list-item__product-image">
-														<img src="img/catalog/aside-right__item-18.jpg" width="250"
-															height="250" alt="notebook">
+														<a href="about.html">
+															<img src="img/catalog/aside-right__item-18.jpg" width="250"
+																height="250" alt="notebook">
+														</a>
 													</div>
 													<div class="product-review">
-														<div class="rating-area">
-															<span class="reviews-count">
+														<div class="product-review__rating-area">
+															<span class="product-review__reviews-count">
 																Reviews (4)
 															</span>
-															<fieldset class="rating">
-																<div class="rating__group">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Excellent"
-																		value="1">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Good" value="2"
-																		checked>
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Normal" value="3">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Not enough good"
-																		value="4">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Awful" value="5">
+															<fieldset class="product-review__rating">
+																<div class="product-review__rating-group">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2"
+																		aria-label="Excellent" value="1">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Good"
+																		value="2" checked>
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Normal"
+																		value="3">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2"
+																		aria-label="Not enough good" value="4">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Awful"
+																		value="5">
 																</div>
 															</fieldset>
 														</div>
@@ -5026,7 +5098,7 @@
 												<div class="list-item__intaractive">
 													<div class="availability">
 														<span class="in-stock">
-															In stock
+															in stock
 														</span>
 													</div>
 													<div class="list-item__hovered-icon">
@@ -5067,29 +5139,33 @@
 											<div class="aside-right-list__items list__item-8">
 												<div class="list-item__view">
 													<div class="list-item__product-image">
-														<img src="img/catalog/aside-right__item-19.jpg" width="250"
-															height="250" alt="notebook">
+														<a href="about.html">
+															<img src="img/catalog/aside-right__item-19.jpg" width="250"
+																height="250" alt="notebook">
+														</a>
 													</div>
 													<div class="product-review">
-														<div class="rating-area">
-															<span class="reviews-count">
+														<div class="product-review__rating-area">
+															<span class="product-review__reviews-count">
 																Reviews (4)
 															</span>
-															<fieldset class="rating">
-																<div class="rating__group">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Excellent"
-																		value="1">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Good" value="2"
-																		checked>
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Normal" value="3">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Not enough good"
-																		value="4">
-																	<input class="rating__star" type="radio"
-																		name="laptop-2" aria-label="Awful" value="5">
+															<fieldset class="product-review__rating">
+																<div class="product-review__rating-group">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2"
+																		aria-label="Excellent" value="1">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Good"
+																		value="2" checked>
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Normal"
+																		value="3">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2"
+																		aria-label="Not enough good" value="4">
+																	<input class="product-review__rating-star"
+																		type="radio" name="laptop-2" aria-label="Awful"
+																		value="5">
 																</div>
 															</fieldset>
 														</div>
@@ -5157,7 +5233,7 @@
 												<div class="list-item__intaractive">
 													<div class="availability">
 														<span class="in-stock">
-															In stock
+															in stock
 														</span>
 													</div>
 													<div class="list-item__hovered-icon">
@@ -5726,15 +5802,15 @@
 </footer>
 
 	</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.js?_v=20221026063945"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221026063945"></script>
-	<script src="js/pagination.js?_v=20221026063945"></script>
-	<script src="js/grid-list-view.js?_v=20221026063945"></script>
-	<script src="js/clear-buttons.js?_v=20221026063945"></script>
-	<script src="js/modal.js?_v=20221026063945"></script>
-	<script src="js/color-picker.js?_v=20221026063945"></script>
-	<script src="js/read-more.js?_v=20221026063945"></script>
-	<script src="js/app.min.js?_v=20221026063945"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js?_v=20221031075214"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221031075214"></script>
+	<script src="js/pagination.js?_v=20221031075214"></script>
+	<script src="js/grid-list-view.js?_v=20221031075214"></script>
+	<script src="js/clear-buttons.js?_v=20221031075214"></script>
+	<script src="js/modal.js?_v=20221031075214"></script>
+	<script src="js/color-picker.js?_v=20221031075214"></script>
+	<script src="js/read-more.js?_v=20221031075214"></script>
+	<script src="js/app.min.js?_v=20221031075214"></script>
 
 </body>
 
