@@ -11,13 +11,39 @@ $(".btn-clear__item-2").click(function () {
 
 // Color-picker
 $(".color__block-1").click(function () {
-	$(".active-block-1").addClass("active");
+	$(".active__block-1").removeClass("hide");
+	$(".active__block-1").addClass("active");
 	$(".color__block-1").addClass("hide");
 });
 
 $(".color__block-2").click(function () {
-	$(".active-block-2").addClass("active");
+	$(".active__block-2").removeClass("hide");
+	$(".active__block-2").addClass("active");
 	$(".color__block-2").addClass("hide");
+});
+
+$(".color__block-3").click(function () {
+	$(".active__block-3").removeClass("hide");
+	$(".active__block-3").addClass("active");
+	$(".color__block-3").addClass("hide");
+});
+
+$(".active__block-1, .active").click(function () {
+	$(".active__block-1").removeClass("active");
+	$(".active__block-1").addClass("hide");
+	$(".color__block-1").removeClass("hide");
+});
+
+$(".active__block-2, .active").click(function () {
+	$(".active__block-2").removeClass("active");
+	$(".active__block-2").addClass("hide");
+	$(".color__block-2").removeClass("hide");
+});
+
+$(".active__block-3, .active").click(function () {
+	$(".active__block-3").removeClass("active");
+	$(".active__block-3").addClass("hide");
+	$(".color__block-3").removeClass("hide");
 });
 
 // ----------------

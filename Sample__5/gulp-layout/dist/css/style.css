@@ -3230,22 +3230,17 @@ header .header-bottom .container .information .info-cart svg {
           align-items: center;
 }
 
-.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems li,
-.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems li:first-child {
+.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems li {
   cursor: pointer;
 }
 
 .catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .color__block-1,
 .catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .color__block-2 {
+  opacity: 1;
   border-radius: 25px;
   height: 25px;
   width: 25px;
   border: 2px solid #f5f7ff;
-}
-
-.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .color__block-1.hide,
-.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .color__block-2.hide {
-  display: none;
 }
 
 .catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .color__block-1 {
@@ -3258,7 +3253,13 @@ header .header-bottom .container .information .info-cart svg {
   background-color: #db0000;
 }
 
-.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .active-block-1.active {
+.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .color__block-1.hide,
+.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .color__block-2.hide {
+  opacity: 0;
+}
+
+.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .active__block-1.active,
+.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .active__block-2.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3273,59 +3274,26 @@ header .header-bottom .container .information .info-cart svg {
   border-radius: 25px;
   border: 2px solid #0156ff;
   background-color: transparent;
+  position: absolute;
+}
+
+.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .active__block-1.active {
   margin: 0 2.5px 0 0;
 }
 
-.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .active-block-1.active .active__item-1 {
+.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .active__block-1.active .active__item-1 {
   background-color: #000;
   width: 23px;
   height: 23px;
   border-radius: 23px;
 }
 
-.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .active-block-2.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 25px;
-  width: 25px;
-  border-radius: 25px;
-  border: 2px solid #0156ff;
-  background-color: transparent;
-  margin: 0 0 0 2.5px;
+.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .active__block-2.active {
+  margin: 0 0 0 33.5px;
 }
 
-.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .active-block-2.active .active__item-2 {
+.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .active__block-2.active .active__item-2 {
   background-color: #db0000;
-  width: 23px;
-  height: 23px;
-  border-radius: 23px;
-}
-
-.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .active-block-1.active ~ .color__block-1,
-.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .active-block-2.active ~ .color__block-2 {
-  display: none;
-}
-
-.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .active-block-1,
-.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .active-block-2 {
-  display: none;
-  height: 25px;
-  width: 25px;
-  border-radius: 25px;
-  border: 2px solid #0156ff;
-  background-color: transparent;
-}
-
-.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .active-block-1 .active__item,
-.catalog-container .catalog-container__list .catalog-container__main .aside-left .aside-left__filter-list .aside-left__list .aside-left__color li .color__subitems .active-block-2 .active__item {
-  background-color: #000;
   width: 23px;
   height: 23px;
   border-radius: 23px;
@@ -4823,14 +4791,14 @@ header .header-bottom .container .information .info-cart svg {
   background-color: #f5f7ff;
 }
 
-.about-header__header {
+.about-header {
   border: 1px solid #cbcbcb;
   height: 136px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.about-header__header .about-header__container {
+.about-header .about-header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4846,11 +4814,11 @@ header .header-bottom .container .information .info-cart svg {
           justify-content: space-between;
 }
 
-.about-header__header .about-header__container .about-header__product-link {
+.about-header .about-header__container .about-header__product-link {
   margin: auto 0;
 }
 
-.about-header__header .about-header__container .about-header__product-link ul > li {
+.about-header .about-header__container .about-header__product-link ul > li {
   display: inline-block;
   margin: 0 30px 0 0;
   font-weight: 600;
@@ -4860,15 +4828,12 @@ header .header-bottom .container .information .info-cart svg {
   cursor: pointer;
 }
 
-.about-header__header .about-header__container .about-header__product-link ul > li:last-child {
+.about-header .about-header__container .about-header__product-link ul > li:last-child {
   margin: 0;
 }
 
-.about-header__header .about-header__container .about-header__product-link ul > li.active {
-  color: #000;
-}
-
-.about-header__header .about-header__container .about-header__product-link ul > li.active::after {
+.about-header .about-header__container .about-header__product-link ul > li.active::after,
+.about-header .about-header__container .about-header__product-link ul > li:hover::after {
   content: "";
   display: block;
   height: 2px;
@@ -4877,7 +4842,11 @@ header .header-bottom .container .information .info-cart svg {
   border-radius: 50px;
 }
 
-.about-header__header .about-header__container .about-header__product-interactive {
+.about-header .about-header__container .about-header__product-link ul > li.active {
+  color: #000;
+}
+
+.about-header .about-header__container .about-header__product-interactive {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4888,7 +4857,7 @@ header .header-bottom .container .information .info-cart svg {
   height: 100%;
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-counter {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-counter {
   margin: auto 7px auto 0;
   width: auto;
   max-width: 27.0625rem;
@@ -4901,16 +4870,16 @@ header .header-bottom .container .information .info-cart svg {
           align-items: center;
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-counter label {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-counter label {
   line-height: 21px;
   font-size: 14px;
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-counter label span {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-counter label span {
   font-weight: 600;
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-counter input[type=number] {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-counter input[type=number] {
   background-color: #f5f7ff;
   border-radius: 6px;
   height: 50px;
@@ -4920,16 +4889,16 @@ header .header-bottom .container .information .info-cart svg {
   -moz-appearance: textfield;
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-counter input[type=number]:focus {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-counter input[type=number]:focus {
   outline: none;
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-counter input[type=number]::-webkit-inner-spin-button,
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-counter input[type=number]::-webkit-outer-spin-button {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-counter input[type=number]::-webkit-inner-spin-button,
+.about-header .about-header__container .about-header__product-interactive .about-header__product-counter input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-counter input[type=submit] {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-counter input[type=submit] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4947,7 +4916,7 @@ header .header-bottom .container .information .info-cart svg {
   background-color: #0156ff;
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-counter .about-header__counter-btn {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-counter .about-header__counter-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4960,19 +4929,19 @@ header .header-bottom .container .information .info-cart svg {
   width: auto;
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-counter .about-header__counter-btn button {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-counter .about-header__counter-btn button {
   background-color: transparent;
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-counter .about-header__counter-btn button:first-child::before {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-counter .about-header__counter-btn button:first-child::before {
   content: url("../img/svg/arrow-top-gray.svg");
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-counter .about-header__counter-btn button:last-child::before {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-counter .about-header__counter-btn button:last-child::before {
   content: url("../img/svg/arrow-down-gray.svg");
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-payment {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-payment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4983,8 +4952,8 @@ header .header-bottom .container .information .info-cart svg {
   height: 100%;
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-payment .about-header__link-checkout,
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-payment .about-header__link-to-pay {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-payment .about-header__link-checkout,
+.about-header .about-header__container .about-header__product-interactive .about-header__product-payment .about-header__link-to-pay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5000,30 +4969,398 @@ header .header-bottom .container .information .info-cart svg {
   cursor: pointer;
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-payment .about-header__link-checkout {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-payment .about-header__link-checkout {
   background-color: #0156ff;
   margin: auto 7px auto 0;
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-payment .about-header__link-checkout a {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-payment .about-header__link-checkout a {
   color: #fff;
   font-size: 14px;
   line-height: 21px;
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-payment .about-header__link-to-pay {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-payment .about-header__link-to-pay {
   background-color: #ffb800;
   margin: auto 0;
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-payment .about-header__link-to-pay a {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-payment .about-header__link-to-pay a {
   color: #000;
   font-size: 12px;
   line-height: 18px;
 }
 
-.about-header__header .about-header__container .about-header__product-interactive .about-header__product-payment .about-header__link-to-pay a::after {
+.about-header .about-header__container .about-header__product-interactive .about-header__product-payment .about-header__link-to-pay a::after {
   content: url("../img/");
+}
+
+.about-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-product .about-product__about,
+.about-product .about-product__detail,
+.about-product .about-product__specs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 675px;
+  width: 100%;
+}
+
+.about-product .about-product__about .about-product__info,
+.about-product .about-product__detail .about-product__info,
+.about-product .about-product__specs .about-product__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 55.4%;
+  max-width: 55.4%;
+  height: 100%;
+  background-color: #f5f7ff;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container,
+.about-product .about-product__detail .about-product__info .about-product__container,
+.about-product .about-product__specs .about-product__info .about-product__container {
+  width: 802px;
+  height: 100%;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs,
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text {
+  margin: 0 0 0 117px;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs {
+  margin: 67px 0 0 117px;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0 6px 0 0;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li::after,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li::after,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li::after {
+  content: "›";
+  color: #0156ff;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child::after,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child::after,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child::after {
+  content: "";
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child a,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child a,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child a {
+  color: #a2a6b0;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li a,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li a,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__logo h1,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__logo h1,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__logo h1 {
+  margin: 25px 0 0 0;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link {
+  margin: 13px 0 0 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #0156ff;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__main-info,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__main-info,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__main-info {
+  margin: 24px 118px 0 0;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__main-info p,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__main-info p,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__main-info p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker {
+  margin: 54px 0 0 0;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems li,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems li,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems li {
+  cursor: pointer;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3 {
+  opacity: 1;
+  border-radius: 25px;
+  height: 25px;
+  width: 25px;
+  border: 2px solid #f5f7ff;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1 {
+  margin: 0 2.5px 0 0;
+  background-color: #4b4d4f;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2 {
+  margin: 0 0 0 2.5px;
+  background-color: #f2e9dc;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3 {
+  margin: 0 0 0 2.5px;
+  background-color: #eae8eb;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1.hide,
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2.hide,
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3.hide,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1.hide,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2.hide,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3.hide,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1.hide,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2.hide,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3.hide {
+  opacity: 0;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 25px;
+  border: 2px solid #0156ff;
+  background-color: transparent;
+  position: absolute;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active {
+  margin: 0 2.5px 0 0;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active .active__item-1,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active .active__item-1,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active .active__item-1 {
+  background-color: #4b4d4f;
+  width: 23px;
+  height: 23px;
+  border-radius: 23px;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active {
+  margin: 0 0 0 33.5px;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active .active__item-2,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active .active__item-2,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active .active__item-2 {
+  background-color: #f2e9dc;
+  width: 23px;
+  height: 23px;
+  border-radius: 23px;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active {
+  margin: 0 0 0 67px;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active .active__item-3,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active .active__item-3,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active .active__item-3 {
+  background-color: #eae8eb;
+  width: 23px;
+  height: 23px;
+  border-radius: 23px;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1,
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2 {
+  margin: 29px 118px 0 0;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span {
+  font-weight: 600;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a {
+  font-weight: 400;
+  text-decoration-line: underline;
+  color: #0156ff;
+  margin: 0 0 0 6px;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2 span,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2 span,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2 span {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__more-info,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__more-info,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__more-info {
+  margin: 0 0 59px 0;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__more-info span,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__more-info span,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__more-info span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000;
+  text-transform: uppercase;
 }
 
 footer {
