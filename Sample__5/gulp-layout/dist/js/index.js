@@ -140,7 +140,7 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 // ----------------
-// Read More button
+// Read More button (catalog.html)
 // ----------------
 jQuery(function ($) {
 	// resize the slide-read-more Div
@@ -178,15 +178,31 @@ jQuery(function ($) {
 });
 
 // ----------------
-// Feedback Swiper
+// Feedback Swiper (index.html)
 // ----------------
-new Swiper('.feedback-slider', {
+new Swiper('.swiper-slider', {
 	navigation: {
-		nextEl: '.feedback-slider-button-next',
-		prevEl: '.feedback-slider-button-prev'
+		nextEl: '.swiper-slider-button-next',
+		prevEl: '.swiper-slider-button-prev'
 	},
 	pagination: {
-		el: '.feedback-slider-pagination',
+		el: '.swiper-slider-pagination',
+		clickable: true,
+	},
+	simulateTouch: false,
+	loop: true,
+});
+
+// ----------------
+// Ad Swiper (about.html)
+// ----------------
+new Swiper('.about-ad-slider', {
+	navigation: {
+		nextEl: '.about-ad-slider-button-next',
+		prevEl: '.about-ad-slider-button-prev'
+	},
+	pagination: {
+		el: '.about-ad-slider-pagination',
 		clickable: true,
 	},
 	simulateTouch: false,
@@ -277,4 +293,38 @@ $('.slider').each(function () {
 	});
 
 	advance();
+});
+
+// About page active links
+$(".link-1").click(function () {
+	$(".link-1").addClass("active");
+	$(".link-2").removeClass("active");
+	$(".link-3").removeClass("active");
+	$(".about-product__info").removeClass("hide");
+	$(".about-product__detail").addClass("hide");
+	$(".about-product__specs").addClass("hide");
+});
+
+$(".link-2").click(function () {
+	$(".link-2").addClass("active");
+	$(".link-1").removeClass("active");
+	$(".link-3").removeClass("active");
+	$(".about-product__detail").removeClass("hide");
+	$(".about-product__info").addClass("hide");
+	$(".about-product__specs").addClass("hide");
+});
+
+$(".link-3").click(function () {
+	$(".link-3").addClass("active");
+	$(".link-1").removeClass("active");
+	$(".link-2").removeClass("active");
+	$(".about-product__specs").removeClass("hide");
+	$(".about-product__detail").addClass("hide");
+	$(".about-product__info").addClass("hide");
+});
+
+$(".active__block-1, .active").click(function () {
+	$(".active__block-1").removeClass("active");
+	$(".active__block-1").addClass("hide");
+	$(".color__block-1").removeClass("hide");
 });

@@ -430,6 +430,10 @@ header .header-bottom .container .information .information__link a {
   text-align: center;
 }
 
+header .header-bottom .container .information .information__link a:focus {
+  color: #000;
+}
+
 header .header-bottom .container .information .information__link .open-menu {
   width: 81.91px;
   cursor: pointer;
@@ -2187,76 +2191,6 @@ header .header-bottom .container .information .info-cart svg {
   min-width: 0;
 }
 
-.container .list-view .feedback .feedback-slider {
-  overflow: hidden;
-  height: 146.5px;
-  width: 922px;
-  margin: 46px auto 21.5px;
-}
-
-.container .list-view .feedback .feedback-slider .feedback-slider__wrapper .feedback-slider__slide .feedback-slider__image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 922px;
-  height: 146.5px;
-}
-
-.container .list-view .feedback .feedback-slider .feedback-slider__wrapper .feedback-slider__slide .feedback-slider__image .feedback-slider__message {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 0 0 7px 0;
-}
-
-.container .list-view .feedback .feedback-slider .feedback-slider__wrapper .feedback-slider__slide .feedback-slider__image .feedback-slider__message .feedback__quote {
-  width: 46px;
-  height: 69px;
-  margin: 0 26px 0 0;
-  font-weight: 400;
-  font-size: 96px;
-  line-height: 144px;
-}
-
-.container .list-view .feedback .feedback-slider .feedback-slider__wrapper .feedback-slider__slide .feedback-slider__image .feedback-slider__message .feedback__quote span {
-  height: 69px;
-  display: block;
-  margin: -30px 0;
-}
-
-.container .list-view .feedback .feedback-slider .feedback-slider__wrapper .feedback-slider__slide .feedback-slider__image .feedback-slider__message .feedback__text {
-  width: 850px;
-  height: 103.5px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-}
-
-.container .list-view .feedback .feedback-slider .feedback-slider__wrapper .feedback-slider__slide .feedback-slider__image .feedback-slider__message .feedback__text span {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-}
-
-.container .list-view .feedback .feedback-slider .feedback-slider__wrapper .feedback-slider__slide .feedback-slider__image .feedback-slider__author {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: end;
-}
-
-.container .list-view .feedback .feedback-slider .feedback-slider__wrapper .feedback-slider__slide .feedback-slider__image .feedback-slider__author span::before {
-  content: "-";
-}
-
 .container .list-view .feedback .feedback__interactive {
   width: 922px;
   height: 37px;
@@ -2283,28 +2217,6 @@ header .header-bottom .container .information .info-cart svg {
   line-height: 21px;
   text-align: center;
   color: #0156ff;
-}
-
-.container .list-view .feedback .feedback__interactive .feedback__pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 78px;
-  height: 12px;
-}
-
-.container .list-view .feedback .feedback__interactive .feedback__pagination .feedback-slider-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #cacdd8;
-  opacity: 1;
-}
-
-.container .list-view .feedback .feedback__interactive .feedback__pagination .feedback-slider-pagination .swiper-pagination-bullet-active {
-  background-color: #0156ff;
 }
 
 .availability .in-stock,
@@ -4818,7 +4730,7 @@ header .header-bottom .container .information .info-cart svg {
   margin: auto 0;
 }
 
-.about-header .about-header__container .about-header__product-link ul > li {
+.about-header .about-header__container .about-header__product-link ul > .about-header__link {
   display: inline-block;
   margin: 0 30px 0 0;
   font-weight: 600;
@@ -4828,12 +4740,12 @@ header .header-bottom .container .information .info-cart svg {
   cursor: pointer;
 }
 
-.about-header .about-header__container .about-header__product-link ul > li:last-child {
+.about-header .about-header__container .about-header__product-link ul > .about-header__link:last-child {
   margin: 0;
 }
 
-.about-header .about-header__container .about-header__product-link ul > li.active::after,
-.about-header .about-header__container .about-header__product-link ul > li:hover::after {
+.about-header .about-header__container .about-header__product-link ul > .about-header__link.active::after,
+.about-header .about-header__container .about-header__product-link ul > .about-header__link:hover::after {
   content: "";
   display: block;
   height: 2px;
@@ -4842,7 +4754,7 @@ header .header-bottom .container .information .info-cart svg {
   border-radius: 50px;
 }
 
-.about-header .about-header__container .about-header__product-link ul > li.active {
+.about-header .about-header__container .about-header__product-link ul > .about-header__link.active {
   color: #000;
 }
 
@@ -5020,8 +4932,14 @@ header .header-bottom .container .information .info-cart svg {
 }
 
 .about-product .about-product__about .about-product__info,
+.about-product .about-product__about .about-product__detail,
+.about-product .about-product__about .about-product__specs,
 .about-product .about-product__detail .about-product__info,
-.about-product .about-product__specs .about-product__info {
+.about-product .about-product__detail .about-product__detail,
+.about-product .about-product__detail .about-product__specs,
+.about-product .about-product__specs .about-product__info,
+.about-product .about-product__specs .about-product__detail,
+.about-product .about-product__specs .about-product__specs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5035,9 +4953,27 @@ header .header-bottom .container .information .info-cart svg {
   background-color: #f5f7ff;
 }
 
+.about-product .about-product__about .about-product__info.hide,
+.about-product .about-product__about .about-product__detail.hide,
+.about-product .about-product__about .about-product__specs.hide,
+.about-product .about-product__detail .about-product__info.hide,
+.about-product .about-product__detail .about-product__detail.hide,
+.about-product .about-product__detail .about-product__specs.hide,
+.about-product .about-product__specs .about-product__info.hide,
+.about-product .about-product__specs .about-product__detail.hide,
+.about-product .about-product__specs .about-product__specs.hide {
+  display: none;
+}
+
 .about-product .about-product__about .about-product__info .about-product__container,
+.about-product .about-product__about .about-product__detail .about-product__container,
+.about-product .about-product__about .about-product__specs .about-product__container,
 .about-product .about-product__detail .about-product__info .about-product__container,
-.about-product .about-product__specs .about-product__info .about-product__container {
+.about-product .about-product__detail .about-product__detail .about-product__container,
+.about-product .about-product__detail .about-product__specs .about-product__container,
+.about-product .about-product__specs .about-product__info .about-product__container,
+.about-product .about-product__specs .about-product__detail .about-product__container,
+.about-product .about-product__specs .about-product__specs .about-product__container {
   width: 802px;
   height: 100%;
   -ms-flex-item-align: end;
@@ -5057,30 +4993,60 @@ header .header-bottom .container .information .info-cart svg {
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs,
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text,
 .about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text {
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text {
   margin: 0 0 0 117px;
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs {
   margin: 67px 0 0 117px;
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul li,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul li,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul li,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul li,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul li,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul li {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
@@ -5088,34 +5054,64 @@ header .header-bottom .container .information .info-cart svg {
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li::after,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul li::after,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul li::after,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li::after,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li::after {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul li::after,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul li::after,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li::after,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul li::after,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul li::after {
   content: "›";
   color: #0156ff;
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child::after,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child::after,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child::after,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child::after,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child::after {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child::after,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child::after,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child::after,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child::after,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child::after {
   content: "";
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child a,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child a,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child a,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child a,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child a {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child a,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child a,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child a,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child a,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul li:last-child a {
   color: #a2a6b0;
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li a,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul li a,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul li a,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li a,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li a {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul li a,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul li a,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__breadcrumbs ul li a,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__breadcrumbs ul li a,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__breadcrumbs ul li a {
   text-decoration: none;
   color: #000;
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__logo h1,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__logo h1,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__logo h1,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__logo h1,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__logo h1 {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__logo h1,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__logo h1,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__logo h1,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__logo h1,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__logo h1 {
   margin: 25px 0 0 0;
   font-weight: 500;
   font-size: 32px;
@@ -5123,38 +5119,207 @@ header .header-bottom .container .information .info-cart svg {
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link {
   margin: 13px 0 0 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a {
   color: #0156ff;
 }
 
-.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__main-info,
-.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__main-info,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__main-info {
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a:focus,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a:focus,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a:focus,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a:focus,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a:focus,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a:focus,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a:focus,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a:focus,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__logo-link .about-product__link a:focus {
+  color: #0156ff;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description {
   margin: 24px 118px 0 0;
 }
 
-.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__main-info p,
-.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__main-info p,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__main-info p {
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description p,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description p,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description p,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description p,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description p,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description p,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description p,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description p,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description p {
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
 }
 
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li::before,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li::before,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li::before,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li::before,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li::before,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li::before,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li::before,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li::before,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description ul > li::before {
+  content: "•";
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table {
+  border-collapse: collapse;
+  width: 401px;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody {
+  border: 1px solid #cacdd8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(odd),
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(odd),
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(odd),
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(odd),
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(odd),
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(odd),
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(odd),
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(odd),
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(even),
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(even),
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(even),
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(even),
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(even),
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(even),
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(even),
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(even),
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr:nth-child(even) {
+  background-color: #f5f7ff;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  padding: 0.375rem 0.9375rem;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:first-child,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:first-child,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:first-child,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:first-child,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:first-child,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:first-child,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:first-child,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:first-child,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:first-child {
+  width: 9.125rem;
+}
+
+.about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:last-child,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:last-child,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:last-child,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:last-child,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:last-child,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:last-child,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:last-child,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:last-child,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__description .about-product__table tbody tr td:last-child {
+  color: #666;
+}
+
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker {
   margin: 54px 0 0 0;
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -5164,20 +5329,44 @@ header .header-bottom .container .information .info-cart svg {
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems li,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems li,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems li,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems li,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems li {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems li,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems li,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems li,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems li,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems li {
   cursor: pointer;
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
 .about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
 .about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3 {
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3 {
   opacity: 1;
   border-radius: 25px;
   height: 25px;
@@ -5186,22 +5375,40 @@ header .header-bottom .container .information .info-cart svg {
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1 {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1 {
   margin: 0 2.5px 0 0;
   background-color: #4b4d4f;
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2 {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2 {
   margin: 0 0 0 2.5px;
   background-color: #f2e9dc;
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3 {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3 {
   margin: 0 0 0 2.5px;
   background-color: #eae8eb;
 }
@@ -5209,24 +5416,60 @@ header .header-bottom .container .information .info-cart svg {
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1.hide,
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2.hide,
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3.hide,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1.hide,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2.hide,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3.hide,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1.hide,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2.hide,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3.hide,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1.hide,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2.hide,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3.hide,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1.hide,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2.hide,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3.hide,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1.hide,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2.hide,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3.hide,
 .about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1.hide,
 .about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2.hide,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3.hide {
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3.hide,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1.hide,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2.hide,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3.hide,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-1.hide,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-2.hide,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .color__block-3.hide {
   opacity: 0;
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
 .about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
 .about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active {
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5245,14 +5488,26 @@ header .header-bottom .container .information .info-cart svg {
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active {
   margin: 0 2.5px 0 0;
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active .active__item-1,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active .active__item-1,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active .active__item-1,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active .active__item-1,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active .active__item-1 {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active .active__item-1,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active .active__item-1,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active .active__item-1,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active .active__item-1,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-1.active .active__item-1 {
   background-color: #4b4d4f;
   width: 23px;
   height: 23px;
@@ -5260,14 +5515,26 @@ header .header-bottom .container .information .info-cart svg {
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active {
   margin: 0 0 0 33.5px;
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active .active__item-2,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active .active__item-2,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active .active__item-2,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active .active__item-2,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active .active__item-2 {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active .active__item-2,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active .active__item-2,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active .active__item-2,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active .active__item-2,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-2.active .active__item-2 {
   background-color: #f2e9dc;
   width: 23px;
   height: 23px;
@@ -5275,14 +5542,26 @@ header .header-bottom .container .information .info-cart svg {
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active {
   margin: 0 0 0 67px;
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active .active__item-3,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active .active__item-3,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active .active__item-3,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active .active__item-3,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active .active__item-3 {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active .active__item-3,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active .active__item-3,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active .active__item-3,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active .active__item-3,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__color-picker .color__subitems .active__block-3.active .active__item-3 {
   background-color: #eae8eb;
   width: 23px;
   height: 23px;
@@ -5290,8 +5569,14 @@ header .header-bottom .container .information .info-cart svg {
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5306,32 +5591,68 @@ header .header-bottom .container .information .info-cart svg {
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1,
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2,
 .about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2 {
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2 {
   margin: 29px 118px 0 0;
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
 .about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a {
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a {
   font-size: 12px;
   line-height: 18px;
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 span {
   font-weight: 600;
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-1 a {
   font-weight: 400;
   text-decoration-line: underline;
   color: #0156ff;
@@ -5339,8 +5660,14 @@ header .header-bottom .container .information .info-cart svg {
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2 span,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2 span,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2 span,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2 span,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2 span {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2 span,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2 span,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2 span,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2 span,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__main-info .about-product__info-text .about-product__additional .about-product__additional_item-2 span {
   font-weight: 300;
   font-size: 12px;
   line-height: 18px;
@@ -5348,19 +5675,333 @@ header .header-bottom .container .information .info-cart svg {
 }
 
 .about-product .about-product__about .about-product__info .about-product__container .about-product__more-info,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__more-info,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__more-info,
 .about-product .about-product__detail .about-product__info .about-product__container .about-product__more-info,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__more-info {
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__more-info,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__more-info,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__more-info,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__more-info,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__more-info {
   margin: 0 0 59px 0;
 }
 
-.about-product .about-product__about .about-product__info .about-product__container .about-product__more-info span,
-.about-product .about-product__detail .about-product__info .about-product__container .about-product__more-info span,
-.about-product .about-product__specs .about-product__info .about-product__container .about-product__more-info span {
+.about-product .about-product__about .about-product__info .about-product__container .about-product__more-info button,
+.about-product .about-product__about .about-product__detail .about-product__container .about-product__more-info button,
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__more-info button,
+.about-product .about-product__detail .about-product__info .about-product__container .about-product__more-info button,
+.about-product .about-product__detail .about-product__detail .about-product__container .about-product__more-info button,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__more-info button,
+.about-product .about-product__specs .about-product__info .about-product__container .about-product__more-info button,
+.about-product .about-product__specs .about-product__detail .about-product__container .about-product__more-info button,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__more-info button {
+  background-color: rgba(0, 0, 0, 0);
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   color: #000;
   text-transform: uppercase;
+}
+
+.about-product .about-product__about .about-product__specs .about-product__container .about-product__more-info,
+.about-product .about-product__detail .about-product__specs .about-product__container .about-product__more-info,
+.about-product .about-product__specs .about-product__specs .about-product__container .about-product__more-info {
+  margin: 0 0 169px 0;
+}
+
+.about-product .about-product__about .about-product__info-slider .swiper-slider,
+.about-product .about-product__detail .about-product__info-slider .swiper-slider,
+.about-product .about-product__specs .about-product__info-slider .swiper-slider {
+  margin: 0;
+  height: 37.6875rem;
+}
+
+.about-product .about-product__about .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message,
+.about-product .about-product__detail .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message,
+.about-product .about-product__specs .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message {
+  margin: 0;
+}
+
+.about-product .about-product__about .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .swiper-slider__icons,
+.about-product .about-product__detail .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .swiper-slider__icons,
+.about-product .about-product__specs .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .swiper-slider__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 96px 0 0 23px;
+}
+
+.about-product .about-product__about .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .swiper-slider__icons .swiper-slider__icons_item-1::before,
+.about-product .about-product__detail .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .swiper-slider__icons .swiper-slider__icons_item-1::before,
+.about-product .about-product__specs .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .swiper-slider__icons .swiper-slider__icons_item-1::before {
+  content: url("../img/svg/iteraction_like.svg");
+}
+
+.about-product .about-product__about .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .swiper-slider__icons .swiper-slider__icons_item-2::before,
+.about-product .about-product__detail .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .swiper-slider__icons .swiper-slider__icons_item-2::before,
+.about-product .about-product__specs .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .swiper-slider__icons .swiper-slider__icons_item-2::before {
+  content: url("../img/svg/iteraction_stats.svg");
+}
+
+.about-product .about-product__about .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .swiper-slider__icons .swiper-slider__icons_item-3::before,
+.about-product .about-product__detail .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .swiper-slider__icons .swiper-slider__icons_item-3::before,
+.about-product .about-product__specs .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .swiper-slider__icons .swiper-slider__icons_item-3::before {
+  content: url("../img/svg/iteraction_mail.svg");
+}
+
+.about-product .about-product__about .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .swiper-slider__picture,
+.about-product .about-product__detail .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .swiper-slider__picture,
+.about-product .about-product__specs .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .swiper-slider__picture {
+  margin: 60px 0 0 74px;
+}
+
+.about-product .about-product__about .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan,
+.about-product .about-product__detail .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan,
+.about-product .about-product__specs .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 32px 0 0 124px;
+  width: 263px;
+  height: 28px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.about-product .about-product__about .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan .content,
+.about-product .about-product__detail .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan .content,
+.about-product .about-product__specs .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-product .about-product__about .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan .content .line,
+.about-product .about-product__detail .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan .content .line,
+.about-product .about-product__specs .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan .content .line {
+  margin: 0 14.5px 0 11.5px;
+}
+
+.about-product .about-product__about .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan .content .slogan span,
+.about-product .about-product__about .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan .content .slogan .link,
+.about-product .about-product__detail .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan .content .slogan span,
+.about-product .about-product__detail .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan .content .slogan .link,
+.about-product .about-product__specs .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan .content .slogan span,
+.about-product .about-product__specs .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan .content .slogan .link {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 120.5%;
+  color: #000;
+}
+
+.about-product .about-product__about .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan .content .slogan .link,
+.about-product .about-product__detail .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan .content .slogan .link,
+.about-product .about-product__specs .about-product__info-slider .swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .products__loan .content .slogan .link {
+  margin: 0 0 0 4px;
+  text-decoration: underline;
+}
+
+.about-product .about-product__about .about-product__info-slider .feedback__interactive,
+.about-product .about-product__detail .about-product__info-slider .feedback__interactive,
+.about-product .about-product__specs .about-product__info-slider .feedback__interactive {
+  margin: 0 0 0 530px;
+}
+
+.about-product .about-product__about .about-product__info-slider .feedback__interactive .swiper__pagination,
+.about-product .about-product__detail .about-product__info-slider .feedback__interactive .swiper__pagination,
+.about-product .about-product__specs .about-product__info-slider .feedback__interactive .swiper__pagination {
+  height: 10px;
+}
+
+.about-product .about-product__about .about-product__info-slider .feedback__interactive .swiper__pagination .swiper-slider-pagination .swiper-pagination-bullet,
+.about-product .about-product__detail .about-product__info-slider .feedback__interactive .swiper__pagination .swiper-slider-pagination .swiper-pagination-bullet,
+.about-product .about-product__specs .about-product__info-slider .feedback__interactive .swiper__pagination .swiper-slider-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+.about-ad {
+  width: 100%;
+  height: 42.5625rem;
+  background: -webkit-gradient(linear, left top, right top, color-stop(43%, #010101), color-stop(56.23%, #0e0f10), color-stop(77%, #0e0f10), to(#010101));
+  background: -o-linear-gradient(left, #010101 43%, #0e0f10 56.23%, #0e0f10 77%, #010101 100%);
+  background: linear-gradient(to right, #010101 43%, #0e0f10 56.23%, #0e0f10 77%, #010101 100%);
+}
+
+.about-ad .about-ad-slider {
+  height: 616px;
+}
+
+.about-ad .about-ad-slider .about-ad-slider__wrapper .about-ad-slider__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-ad .about-ad-slider .about-ad-slider__wrapper .about-ad-slider__slide .about-ad-slider__group {
+  width: 1400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-ad .about-ad-slider .about-ad-slider__wrapper .about-ad-slider__slide .about-ad-slider__group .about-ad-slider__ad-content {
+  margin: 0 0 -165px 381px;
+  padding: 165px 0 0;
+  width: 27.25rem;
+  z-index: 3;
+  height: calc(100% - 165px);
+}
+
+.about-ad .about-ad-slider .about-ad-slider__wrapper .about-ad-slider__slide .about-ad-slider__group .about-ad-slider__ad-content h2 {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 58px;
+  color: #fff;
+}
+
+.about-ad .about-ad-slider .about-ad-slider__wrapper .about-ad-slider__slide .about-ad-slider__group .about-ad-slider__ad-content span {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.about-ad .about-ad-slider .about-ad-slider__wrapper .about-ad-slider__slide .about-ad-slider__group .about-ad-slider__image {
+  margin: 0 278px 0 0;
+  z-index: 2;
+}
+
+.about-ad .about-ad-slider .about-ad-slider__wrapper .about-ad-slider__slide .about-ad-slider__opacity-block {
+  height: 42.5625rem;
+  min-width: 10%;
+  max-width: 19%;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(25%, #0d0d0f), color-stop(50%, #040405), to(transparent));
+  background: -o-linear-gradient(left, transparent, #0d0d0f 25%, #040405 50%, transparent 100%);
+  background: linear-gradient(to right, transparent, #0d0d0f 25%, #040405 50%, transparent 100%);
+  margin: 0 0 0 1328px;
+  z-index: 9;
+}
+
+.about-ad .about-ad-slider .about-ad-slider__interactive {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.about-ad .about-ad-slider .about-ad-slider__interactive .about-ad-slider__pagination {
+  height: 10px;
+}
+
+.about-ad .about-ad-slider .about-ad-slider__interactive .about-ad-slider__pagination .about-ad-slider-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.about-ad .about-ad-slider .about-ad-slider__interactive .about-ad-slider__pagination .about-ad-slider-pagination .swiper-pagination-bullet-active {
+  background-color: #0156ff;
+}
+
+.about-faq {
+  width: 100%;
+  height: 25.4375rem;
+}
+
+.about-faq .about-faq__container {
+  height: 100%;
+  width: 1400px;
+  max-width: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  background: url("../img/about-faq.jpg") no-repeat;
+  background-blend-mode: multiply;
+  background-position-x: center;
+}
+
+.about-faq .about-faq__container .about-faq__link {
+  margin: 0 0 0 266px;
+}
+
+.about-faq .about-faq__container .about-faq__link .about-faq__link_item-1,
+.about-faq .about-faq__container .about-faq__link .about-faq__link_item-2,
+.about-faq .about-faq__container .about-faq__link .about-faq__link_item-3 {
+  width: 291px;
+  height: 56px;
+  margin: 0 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #cacdd8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #313131;
+  padding: 0 26px 0;
+}
+
+.about-faq .about-faq__container .about-faq__link .about-faq__link_item-1:last-child,
+.about-faq .about-faq__container .about-faq__link .about-faq__link_item-2:last-child,
+.about-faq .about-faq__container .about-faq__link .about-faq__link_item-3:last-child {
+  margin: 0;
+}
+
+.about-faq .about-faq__container .about-faq__link .about-faq__link_item-1::after,
+.about-faq .about-faq__container .about-faq__link .about-faq__link_item-2::after,
+.about-faq .about-faq__container .about-faq__link .about-faq__link_item-3::after {
+  content: "→";
+  font-size: 18px;
+  line-height: 27px;
+  color: #0156ff;
+}
+
+.about-additional {
+  width: 100%;
+  height: 43.3125rem;
+  background: -o-radial-gradient(50% 50%, 50% 50%, #242528 0%, #040404 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #242528 0%, #040404 100%);
 }
 
 footer {
@@ -5588,4 +6229,96 @@ footer .footer__copyright .footer__text {
 .vendor img:hover {
   -webkit-animation: dissolve ease-out 300ms;
           animation: dissolve ease-out 300ms;
+}
+
+.swiper-slider {
+  overflow: hidden;
+  height: 146.5px;
+  width: 922px;
+  margin: 46px auto 21.5px;
+}
+
+.swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 922px;
+  height: 146.5px;
+}
+
+.swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 0 7px 0;
+}
+
+.swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .swiper-slider__quote {
+  width: 46px;
+  height: 69px;
+  margin: 0 26px 0 0;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 144px;
+}
+
+.swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .swiper-slider__quote span {
+  height: 69px;
+  display: block;
+  margin: -30px 0;
+}
+
+.swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .feedback__text {
+  width: 850px;
+  height: 103.5px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__message .feedback__text span {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: end;
+}
+
+.swiper-slider .swiper-slider__wrapper .swiper-slider__slide .swiper-slider__image .swiper-slider__author span::before {
+  content: "-";
+}
+
+.swiper__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 78px;
+  height: 100%;
+}
+
+.swiper__pagination .swiper-slider-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #cacdd8;
+  opacity: 1;
+}
+
+.swiper__pagination .swiper-slider-pagination .swiper-pagination-bullet-active {
+  background-color: #0156ff;
 }
