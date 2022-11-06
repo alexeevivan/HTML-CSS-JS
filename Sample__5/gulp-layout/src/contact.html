@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"About",
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main>
+			@@include('html/modal.html',{})
+			<div class="contact__container">
+				<div class="contact__breadcrumbs">
+					<ul>
+						<li>
+							<a href="index.html">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="contact.html">
+								Contact Us
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="contact__main-info">
+					<div class="contact__interactive">
+						<div class="contact__greeting">
+							<h2>
+								Contact Us
+							</h2>
+							<p>
+								We love hearing from you, our Shop customers.
+							</p>
+							<p>
+								Please contact us and we will make sure to get back to you as soon as we possibly can.
+							</p>
+						</div>
+						<div class="contact__form">
+							<form action="#" method="post">
+
+							</form>
+						</div>
+					</div>
+					<div class="contact__address">
+						<div class="contact__address_image">
+							<div class="contact__address_image_item-1"></div>
+							<div class="contact__address_image_item-2"></div>
+							<div class="contact__address_image_item-3"></div>
+							<div class="contact__address_image_item-4"></div>
+						</div>
+						<div class="contact__address_content">
+							<div class="item-1">
+								<h4>
+									Address:
+								</h4>
+								<p>
+									1234 Street Adress City Address, 1234
+								</p>
+							</div>
+							<div class="item-2">
+								<h4>
+									Phone:
+								</h4>
+								<a href="tel:+0012345678">
+									(00)1234 5678
+								</a>
+							</div>
+							<div class="item-3">
+								<h4>
+									We are open:
+								</h4>
+								<p>
+									Monday - Thursday: 9:00 AM - 5:30 PM
+								</p>
+								<p>
+									Friday 9:00 AM - 6:00 PM
+								</p>
+								<p>
+									Saturday: 11:00 AM - 5:00 PM
+								</p>
+							</div>
+							<div class="item-4">
+								<h4>
+									E-mail:
+								</h4>
+								<a href="mailto:shop@email.com">
+									shop@email.com
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/footer.html',{})
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/app.min.js"></script>
+	<script src="js/index.js"></script>
+
+</body>
+
+</html>
