@@ -9,8 +9,8 @@
 		@@include('html/header.html',{})
 		<main>
 			@@include('html/modal.html',{})
-			<div class="contact__container">
-				<div class="contact__breadcrumbs">
+			<div class="container login">
+				<div class="breadcrumbs">
 					<ul>
 						<li>
 							<a href="index.html">
@@ -18,132 +18,86 @@
 							</a>
 						</li>
 						<li>
-							<a href="contact.html">
-								Contact Us
+							<a href="login.html">
+								Login
 							</a>
 						</li>
 					</ul>
 				</div>
-				<div class="contact__main-info">
-					<div class="contact__interactive">
-						<div class="contact__greeting">
-							<h2>
-								Contact Us
-							</h2>
-							<span>
-								We love hearing from you, our Shop customers.
-							</span>
-							<br>
-							<span>
-								Please contact us and we will make sure to get back to you as soon as we possibly can.
-							</span>
-						</div>
-						<div class="contact__form">
-							<form action="#" method="post" class="fill-form">
-								<div class="row">
-									<div class="row__item-1">
-										<label for="name">
-											Your Name<span> *</span>
-										</label>
-									</div>
-									<div class="row__item-2">
-										<label for="email">
-											Your Email<span> *</span>
-										</label>
-									</div>
+				<div class="greeting-text">
+					<h2>
+						Customer Login
+					</h2>
+				</div>
+				<div class="login__content">
+					<div class="login__form">
+						<h4>
+							Registered Customers
+						</h4>
+						<p>
+							If you have an account, sign in with your email address.
+						</p>
+						<form action="#" method="post" class="fill-form">
+							<div class="row">
+								<div class="row__item-1">
+									<label for="email">
+										Email<span> *</span>
+									</label>
 								</div>
-								<div class="row">
-									<div class="row__item-1">
-										<input type="text" id="name" name="yourname" placeholder="Your name">
-									</div>
-									<div class="row__item-2">
-										<input type="email" id="email" name="youremail" placeholder="Your name">
-									</div>
+							</div>
+							<div class="row">
+								<div class="row__item-1 login">
+									<input type="email" id="email" name="youremail" placeholder="Your name">
 								</div>
-								<div class="row">
-									<div class="row__item-1">
-										<label for="phone">
-											Your Phone Number
-										</label>
-									</div>
+							</div>
+							<div class="row">
+								<div class="row__item-1">
+									<label for="password">
+										Password<span> *</span>
+									</label>
 								</div>
-								<div class="row">
-									<div class="row__item-1">
-										<input type="number" id="phone" name="yourephonenumber"
-											placeholder="Your phone">
-									</div>
+							</div>
+							<div class="row">
+								<div class="row__item-1 login">
+									<input type="password" id="password" name="yourpassword" placeholder="Your name">
 								</div>
-								<div class="row">
-									<div class="row__item-1">
-										<label for="review">
-											What’s on your mind?<span> *</span>
-										</label>
-									</div>
-								</div>
-								<div class="row">
-									<div class="row__item-1 review">
-										<textarea id="review" name="review"
-											placeholder="Jot us a note and we’ll get back to you as quickly as possible"></textarea>
-									</div>
-								</div>
-								<div class="row">
-									<input type="submit" value="Submit" class="submit-btn" disabled>
-								</div>
-							</form>
-						</div>
+							</div>
+							<div class="row">
+								<input type="submit" value="Sign In" class="submit-btn login" disabled>
+								<a href="#" class="link-to-restore">
+									Forgot Your Password?
+								</a>
+							</div>
+						</form>
 					</div>
-					<div class="contact__address">
-						<div class="contact__address-image">
-							<div class="contact__address-image-item-1"></div>
-							<div class="contact__address-image-item-2"></div>
-							<div class="contact__address-image-item-3"></div>
-							<div class="contact__address-image-item-4">
-							</div>
-						</div>
-						<div class="contact__address-content">
-							<div class="item-1">
-								<h4>
-									Address:
-								</h4>
-								<p>
-									1234 Street Adress City Address, 1234
-								</p>
-							</div>
-							<div class="item-2">
-								<h4>
-									Phone:
-								</h4>
-								<a href="tel:+0012345678">
-									(00)1234 5678
-								</a>
-							</div>
-							<div class="item-3">
-								<h4>
-									We are open:
-								</h4>
-								<p>
-									Monday - Thursday: 9:00 AM - 5:30 PM
-								</p>
-								<p>
-									Friday 9:00 AM - 6:00 PM
-								</p>
-								<p>
-									Saturday: 11:00 AM - 5:00 PM
-								</p>
-							</div>
-							<div class="item-4">
-								<h4>
-									E-mail:
-								</h4>
-								<a href="mailto:shop@email.com">
-									shop@email.com
-								</a>
-							</div>
+					<div class="login__new-customer-block">
+						<h4>
+							New Customer?
+						</h4>
+						<ul>
+							<li>
+								Creating an account has many benefits:
+							</li>
+							<br>
+							<li>
+								Check out faster
+							</li>
+							<li>
+								Keep more than one address
+							</li>
+							<li>
+								Track orders and more
+							</li>
+						</ul>
+						<div class="login__new-customer-btn">
+							<a href="#">
+								Create An Account
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="information-content">
+			<div class="information-content login">
 				<div class="information-block">
 					<div class="information__item">
 						<div class="information__icon">
@@ -232,7 +186,4 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="js/app.min.js"></script>
 	<script src="js/index.js"></script>
-
 </body>
-
-</html>
