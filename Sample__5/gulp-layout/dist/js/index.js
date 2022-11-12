@@ -47,7 +47,18 @@ $(".active__block-3, .active").click(function () {
 });
 
 // ----------------
-// Items Counter ('about.html')
+// Clear block button ('cart.html')
+// ----------------
+$(".cart__remove-btn.block-1").click(function () {
+	$(".cart-block.block-1").addClass("hidden");
+});
+
+$(".cart__remove-btn.block-2").click(function () {
+	$(".cart-block.block-2").addClass("hidden");
+});
+
+// ----------------
+// Items Counter ('about.html') & ('cart.html')
 // ----------------
 $(document).ready(function () {
 
@@ -68,6 +79,52 @@ $(document).ready(function () {
 		}
 
 		$('#quantity').val(newVal);
+	});
+
+});
+
+$(document).ready(function () {
+
+	$('.cart__btn.block-1').on('click', function (e) {
+		e.preventDefault();
+
+		var button = $(this);
+		var oldValue = $('#quantity-1').val();
+
+		if (button.attr('data-type') == "increase") {
+			var newVal = parseFloat(oldValue) + 1;
+		} else {
+			if (oldValue > 0) {
+				var newVal = parseFloat(oldValue) - 1;
+			} else {
+				newVal = 0;
+			}
+		}
+
+		$('#quantity-1').val(newVal);
+	});
+
+});
+
+$(document).ready(function () {
+
+	$('.cart__btn.block-2').on('click', function (e) {
+		e.preventDefault();
+
+		var button = $(this);
+		var oldValue = $('#quantity-2').val();
+
+		if (button.attr('data-type') == "increase") {
+			var newVal = parseFloat(oldValue) + 1;
+		} else {
+			if (oldValue > 0) {
+				var newVal = parseFloat(oldValue) - 1;
+			} else {
+				newVal = 0;
+			}
+		}
+
+		$('#quantity-2').val(newVal);
 	});
 
 });
@@ -327,4 +384,38 @@ $(".active__block-1, .active").click(function () {
 	$(".active__block-1").removeClass("active");
 	$(".active__block-1").addClass("hide");
 	$(".color__block-1").removeClass("hide");
+});
+
+// ----------------
+// Cart Form open/close
+// ----------------
+$(".open-form-delivery").click(function () {
+	$(".fill-form-discount").addClass("hidden");
+	$(".open-form-discount").removeClass("active");
+	$(".fill-form-delivery").removeClass("hidden");
+	$(".open-form-delivery").addClass("active");
+});
+
+$(".open-form-discount").click(function () {
+	$(".fill-form-delivery").addClass("hidden");
+	$(".open-form-delivery").removeClass("active");
+	$(".open-form-discount").addClass("active");
+	$(".fill-form-discount").removeClass("hidden");
+});
+
+// ----------------
+// Cart Order Info open/close (checkout.html)
+// ----------------
+$(".container__arrow-bottom").click(function () {
+	$(".container__arrow-bottom").removeClass("active");
+	$(".container__arrow-top").addClass("active");
+	$(".container__item._item-1").addClass("hidden");
+	$(".container__item._item-2").addClass("hidden");
+});
+
+$(".container__arrow-top").click(function () {
+	$(".container__arrow-top").removeClass("active");
+	$(".container__arrow-bottom").addClass("active");
+	$(".container__item._item-1").removeClass("hidden");
+	$(".container__item._item-2").removeClass("hidden");
 });
