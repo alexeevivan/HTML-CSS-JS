@@ -553,3 +553,114 @@ $(".account-link_item-10").click(function () {
 	$(".account-link_item-9").removeClass("active");
 	$(".account-link_item-10").addClass("active");
 });
+
+// ----------------
+// List link picker (faq.html)
+// ----------------
+
+$(".link-1").click(function () {
+	$(".link-1").addClass("active");
+	$(".link-2").removeClass("active");
+	$(".link-3").removeClass("active");
+	$(".link-4").removeClass("active");
+	$(".link-5").removeClass("active");
+	$(".link-6").removeClass("active");
+	$(".link-7").removeClass("active");
+	$(".link-8").removeClass("active");
+	$(".link-9").removeClass("active");
+});
+
+$(".link-2").click(function () {
+	$(".link-2").addClass("active");
+	$(".link-1").removeClass("active");
+	$(".link-3").removeClass("active");
+	$(".link-4").removeClass("active");
+	$(".link-5").removeClass("active");
+	$(".link-6").removeClass("active");
+	$(".link-7").removeClass("active");
+	$(".link-8").removeClass("active");
+	$(".link-9").removeClass("active");
+});
+
+$(".link-3").click(function () {
+	$(".link-3").addClass("active");
+	$(".link-1").removeClass("active");
+	$(".link-2").removeClass("active");
+	$(".link-4").removeClass("active");
+	$(".link-5").removeClass("active");
+	$(".link-6").removeClass("active");
+	$(".link-7").removeClass("active");
+	$(".link-8").removeClass("active");
+});
+
+$(".link-4").click(function () {
+	$(".link-4").addClass("active");
+	$(".link-1").removeClass("active");
+	$(".link-2").removeClass("active");
+	$(".link-3").removeClass("active");
+	$(".link-5").removeClass("active");
+	$(".link-6").removeClass("active");
+	$(".link-7").removeClass("active");
+	$(".link-8").removeClass("active");
+	$(".link-9").removeClass("active");
+});
+
+$(".link-5").click(function () {
+	$(".link-5").addClass("active");
+	$(".link-1").removeClass("active");
+	$(".link-2").removeClass("active");
+	$(".link-3").removeClass("active");
+	$(".link-4").removeClass("active");
+	$(".link-6").removeClass("active");
+	$(".link-7").removeClass("active");
+	$(".link-8").removeClass("active");
+	$(".link-9").removeClass("active");
+});
+
+$(".link-6").click(function () {
+	$(".link-6").addClass("active");
+	$(".link-1").removeClass("active");
+	$(".link-2").removeClass("active");
+	$(".link-3").removeClass("active");
+	$(".link-4").removeClass("active");
+	$(".link-5").removeClass("active");
+	$(".link-7").removeClass("active");
+	$(".link-8").removeClass("active");
+	$(".link-9").removeClass("active");
+});
+
+$(".link-7").click(function () {
+	$(".link-7").addClass("active");
+	$(".link-1").removeClass("active");
+	$(".link-2").removeClass("active");
+	$(".link-3").removeClass("active");
+	$(".link-4").removeClass("active");
+	$(".link-5").removeClass("active");
+	$(".link-6").removeClass("active");
+	$(".link-8").removeClass("active");
+	$(".link-9").removeClass("active");
+});
+
+$(".link-8").click(function () {
+	$(".link-8").addClass("active");
+	$(".link-1").removeClass("active");
+	$(".link-2").removeClass("active");
+	$(".link-3").removeClass("active");
+	$(".link-4").removeClass("active");
+	$(".link-5").removeClass("active");
+	$(".link-6").removeClass("active");
+	$(".link-7").removeClass("active");
+	$(".link-9").removeClass("active");
+});
+
+$(".link-9").click(function () {
+	$(".link-9").addClass("active");
+	$(".link-1").removeClass("active");
+	$(".link-2").removeClass("active");
+	$(".link-3").removeClass("active");
+	$(".link-4").removeClass("active");
+	$(".link-5").removeClass("active");
+	$(".link-6").removeClass("active");
+	$(".link-7").removeClass("active");
+	$(".link-8").removeClass("active");
+});
