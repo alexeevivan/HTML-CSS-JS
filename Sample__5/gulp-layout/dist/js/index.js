@@ -419,3 +419,137 @@ $(".container__arrow-top").click(function () {
 	$(".container__item._item-1").removeClass("hidden");
 	$(".container__item._item-2").removeClass("hidden");
 });
+
+// ----------------
+// List link picker (user-account.html)
+// ----------------
+
+$(".account-link_item-1").click(function () {
+	$(".account-link_item-1").addClass("active");
+	$(".account-link_item-2").removeClass("active");
+	$(".account-link_item-3").removeClass("active");
+	$(".account-link_item-4").removeClass("active");
+	$(".account-link_item-5").removeClass("active");
+	$(".account-link_item-6").removeClass("active");
+	$(".account-link_item-7").removeClass("active");
+	$(".account-link_item-8").removeClass("active");
+	$(".account-link_item-9").removeClass("active");
+	$(".account-link_item-10").removeClass("active");
+});
+
+$(".account-link_item-2").click(function () {
+	$(".account-link_item-1").removeClass("active");
+	$(".account-link_item-2").addClass("active");
+	$(".account-link_item-3").removeClass("active");
+	$(".account-link_item-4").removeClass("active");
+	$(".account-link_item-5").removeClass("active");
+	$(".account-link_item-6").removeClass("active");
+	$(".account-link_item-7").removeClass("active");
+	$(".account-link_item-8").removeClass("active");
+	$(".account-link_item-9").removeClass("active");
+	$(".account-link_item-10").removeClass("active");
+});
+
+$(".account-link_item-3").click(function () {
+	$(".account-link_item-1").removeClass("active");
+	$(".account-link_item-2").removeClass("active");
+	$(".account-link_item-3").addClass("active");
+	$(".account-link_item-4").removeClass("active");
+	$(".account-link_item-5").removeClass("active");
+	$(".account-link_item-6").removeClass("active");
+	$(".account-link_item-7").removeClass("active");
+	$(".account-link_item-8").removeClass("active");
+	$(".account-link_item-9").removeClass("active");
+	$(".account-link_item-10").removeClass("active");
+});
+
+$(".account-link_item-4").click(function () {
+	$(".account-link_item-1").removeClass("active");
+	$(".account-link_item-2").removeClass("active");
+	$(".account-link_item-3").removeClass("active");
+	$(".account-link_item-4").addClass("active");
+	$(".account-link_item-5").removeClass("active");
+	$(".account-link_item-6").removeClass("active");
+	$(".account-link_item-7").removeClass("active");
+	$(".account-link_item-8").removeClass("active");
+	$(".account-link_item-9").removeClass("active");
+	$(".account-link_item-10").removeClass("active");
+});
+
+$(".account-link_item-5").click(function () {
+	$(".account-link_item-1").removeClass("active");
+	$(".account-link_item-2").removeClass("active");
+	$(".account-link_item-3").removeClass("active");
+	$(".account-link_item-4").removeClass("active");
+	$(".account-link_item-5").addClass("active");
+	$(".account-link_item-6").removeClass("active");
+	$(".account-link_item-7").removeClass("active");
+	$(".account-link_item-8").removeClass("active");
+	$(".account-link_item-9").removeClass("active");
+	$(".account-link_item-10").removeClass("active");
+});
+
+$(".account-link_item-6").click(function () {
+	$(".account-link_item-1").removeClass("active");
+	$(".account-link_item-2").removeClass("active");
+	$(".account-link_item-3").removeClass("active");
+	$(".account-link_item-4").removeClass("active");
+	$(".account-link_item-5").removeClass("active");
+	$(".account-link_item-6").addClass("active");
+	$(".account-link_item-7").removeClass("active");
+	$(".account-link_item-8").removeClass("active");
+	$(".account-link_item-9").removeClass("active");
+	$(".account-link_item-10").removeClass("active");
+});
+
+$(".account-link_item-7").click(function () {
+	$(".account-link_item-1").removeClass("active");
+	$(".account-link_item-2").removeClass("active");
+	$(".account-link_item-3").removeClass("active");
+	$(".account-link_item-4").removeClass("active");
+	$(".account-link_item-5").removeClass("active");
+	$(".account-link_item-6").removeClass("active");
+	$(".account-link_item-7").addClass("active");
+	$(".account-link_item-8").removeClass("active");
+	$(".account-link_item-9").removeClass("active");
+	$(".account-link_item-10").removeClass("active");
+});
+
+$(".account-link_item-8").click(function () {
+	$(".account-link_item-1").removeClass("active");
+	$(".account-link_item-2").removeClass("active");
+	$(".account-link_item-3").removeClass("active");
+	$(".account-link_item-4").removeClass("active");
+	$(".account-link_item-5").removeClass("active");
+	$(".account-link_item-6").removeClass("active");
+	$(".account-link_item-7").removeClass("active");
+	$(".account-link_item-8").addClass("active");
+	$(".account-link_item-9").removeClass("active");
+	$(".account-link_item-10").removeClass("active");
+});
+
+$(".account-link_item-9").click(function () {
+	$(".account-link_item-1").removeClass("active");
+	$(".account-link_item-2").removeClass("active");
+	$(".account-link_item-3").removeClass("active");
+	$(".account-link_item-4").removeClass("active");
+	$(".account-link_item-5").removeClass("active");
+	$(".account-link_item-6").removeClass("active");
+	$(".account-link_item-7").removeClass("active");
+	$(".account-link_item-8").removeClass("active");
+	$(".account-link_item-9").addClass("active");
+	$(".account-link_item-10").removeClass("active");
+});
+
+$(".account-link_item-10").click(function () {
+	$(".account-link_item-1").removeClass("active");
+	$(".account-link_item-2").removeClass("active");
+	$(".account-link_item-3").removeClass("active");
+	$(".account-link_item-4").removeClass("active");
+	$(".account-link_item-5").removeClass("active");
+	$(".account-link_item-6").removeClass("active");
+	$(".account-link_item-7").removeClass("active");
+	$(".account-link_item-8").removeClass("active");
+	$(".account-link_item-9").removeClass("active");
+	$(".account-link_item-10").addClass("active");
+});
