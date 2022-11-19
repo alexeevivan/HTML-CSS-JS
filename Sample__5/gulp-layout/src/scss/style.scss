@@ -27,6 +27,10 @@ $secondaryColor: #0156ff;
 // Additional background color
 // ================================================================================================
 $lightBgColor: #f5f7ff;
+// ================================================================================================
+// Most common grey color
+// ================================================================================================
+$projectGreyColor: #cacdd8;
 
 body {
 	background-color: #fff;
@@ -39,7 +43,7 @@ header {
 	flex-direction: column;
 	height: 136px;
 	background-color: #fff;
-	border-bottom: 1px solid #cacdd8;
+	border-bottom: 1px solid $projectGreyColor;
 	.header-top {
 		background-color: #020202;
 		height: 44px;
@@ -68,7 +72,8 @@ header {
 					.schedule__time {
 						color: #fff;
 						cursor: pointer;
-						&:hover ~ .shop-info {
+						&:hover ~ .shop-info,
+						&:focus ~ .shop-info {
 							display: flex;
 							flex-direction: column;
 							position: absolute;
@@ -435,8 +440,8 @@ header {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		border-top: 1px solid #cacdd8;
-		border-bottom: 1px solid #cacdd8;
+		border-top: 1px solid $projectGreyColor;
+		border-bottom: 1px solid $projectGreyColor;
 		box-sizing: border-box;
 		margin: 0 0 16.67px 0;
 		min-width: 310px;
@@ -498,7 +503,7 @@ header {
 			}
 		}
 		.modal-cart__item-1 {
-			border-bottom: 1px solid #cacdd8;
+			border-bottom: 1px solid $projectGreyColor;
 		}
 	}
 	.modal-cart__hovered-amount {
@@ -913,6 +918,12 @@ header {
 	&:hover {
 		box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.14);
 	}
+}
+
+// Menu hidden
+
+.menu-hidden {
+	display: none;
 }
 
 .container {
@@ -2150,7 +2161,7 @@ header {
 							margin: 0 10px 0 0;
 							height: 50px;
 							box-sizing: border-box;
-							border: 2px solid #cacdd8;
+							border: 2px solid $projectGreyColor;
 							border-radius: 2px;
 							background-color: #fff;
 							&:last-child {
@@ -2501,7 +2512,7 @@ header {
 					.aside-right__submit-2 {
 						height: 38px;
 						margin: 0 6px 0 8px;
-						border: 1px solid #cacdd8;
+						border: 1px solid $projectGreyColor;
 						border-radius: 2px;
 						display: flex;
 						align-items: center;
@@ -3783,7 +3794,7 @@ header {
 								border-collapse: collapse;
 								width: 401px;
 								tbody {
-									border: 1px solid #cacdd8;
+									border: 1px solid $projectGreyColor;
 									box-sizing: border-box;
 									tr {
 										&:nth-child(odd) {
@@ -4118,7 +4129,7 @@ header {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				border: 1px solid #cacdd8;
+				border: 1px solid $projectGreyColor;
 				box-sizing: border-box;
 				border-radius: 6px;
 				font-weight: 500;
@@ -4471,7 +4482,7 @@ header {
 			width: 100%;
 			flex-direction: row;
 			align-items: center;
-			border-bottom: 1px solid #cacdd8;
+			border-bottom: 1px solid $projectGreyColor;
 			box-sizing: border-box;
 			.item-1,
 			.item-2 {
@@ -4508,7 +4519,7 @@ header {
 				width: 916px;
 				padding: 0 8px 25px 0;
 				margin: 25px 0 0 0;
-				border-bottom: 1px solid #cacdd8;
+				border-bottom: 1px solid $projectGreyColor;
 				box-sizing: border-box;
 				.cart__image {
 					width: 120px;
@@ -4638,7 +4649,7 @@ header {
 			justify-content: space-between;
 			margin: 19px 28px 0 32px;
 			padding: 0 0 25px 0;
-			border-bottom: 1px solid #cacdd8;
+			border-bottom: 1px solid $projectGreyColor;
 			.container__list-1 {
 				width: 100%;
 				.container__list-item {
@@ -4851,7 +4862,7 @@ header {
 		.greeting-text__payment {
 			.greeting-text__scheme {
 				.greeting-text__item-2 {
-					border: 2.5px solid #cacdd8;
+					border: 2.5px solid $projectGreyColor;
 					span {
 						font-weight: 600;
 						font-size: 15px;
@@ -4875,7 +4886,7 @@ header {
 		.container__form-description {
 			height: 42px;
 			width: 100%;
-			border-bottom: 1px solid #cacdd8;
+			border-bottom: 1px solid $projectGreyColor;
 			box-sizing: border-box;
 			h2 {
 				font-weight: 600;
@@ -4922,14 +4933,14 @@ header {
 					cursor: pointer;
 				}
 				&:nth-child(22) {
-					border-bottom: 1px solid #cacdd8;
+					border-bottom: 1px solid $projectGreyColor;
 					padding: 0 0 32px 0;
 				}
 			}
 			.proposal {
 				height: 48px;
 				width: 567px;
-				border-bottom: 1px solid #cacdd8;
+				border-bottom: 1px solid $projectGreyColor;
 				box-sizing: border-box;
 				margin: 0 0 21px 0;
 				span {
@@ -4950,7 +4961,7 @@ header {
 		background-color: $lightBgColor;
 		.container__order-description {
 			padding: 0 0 22px 0;
-			border-bottom: 1px solid #cacdd8;
+			border-bottom: 1px solid $projectGreyColor;
 			box-sizing: border-box;
 			h2 {
 				font-weight: 600;
@@ -5107,7 +5118,7 @@ header {
 						cursor: default;
 						height: 1px;
 						width: 100%;
-						background-color: #cacdd8;
+						background-color: $projectGreyColor;
 						margin: 0 0 14.5px 0;
 					}
 				}
@@ -5183,7 +5194,7 @@ header {
 						height: 42px;
 						box-sizing: border-box;
 						padding: 0 0 14px 0;
-						border-bottom: 1px solid #cacdd8;
+						border-bottom: 1px solid $projectGreyColor;
 						display: flex;
 						flex-direction: row;
 						align-items: baseline;
@@ -5712,7 +5723,7 @@ footer {
 		.swiper-pagination-bullet {
 			width: 12px;
 			height: 12px;
-			background-color: #cacdd8;
+			background-color: $projectGreyColor;
 			opacity: 1;
 		}
 		.swiper-pagination-bullet-active {
@@ -5956,8 +5967,8 @@ footer {
 					.container__blue-logo-cover {
 						&::before {
 							content: url("../img/svg/blue-logo-cover.svg");
-							width: 100%;
-							height: 100%;
+							width: 64px;
+							height: 50px;
 							display: block;
 							position: absolute;
 							margin: 6px 0 0 0;
@@ -5968,8 +5979,8 @@ footer {
 						a {
 							&::before {
 								content: url("../img/svg/logo-mobile.svg");
-								width: 100%;
-								height: 100%;
+								width: 40px;
+								height: 23px;
 								display: block;
 								margin: 9px;
 								position: absolute;
@@ -6097,6 +6108,136 @@ footer {
 					}
 				}
 			}
+		}
+	}
+	.menu-hidden.visible {
+		display: block;
+		animation-name: appearance;
+		animation-timing-function: ease;
+		animation-duration: 0.5s;
+		position: fixed;
+		top: 0;
+		background-color: #fff;
+		height: 100%;
+		width: 56.77%;
+		left: 0%;
+		z-index: 9999;
+		.menu-hidden__container {
+			display: flex;
+			flex-direction: column;
+			padding: 12px 27px 0 24px;
+			.menu-hidden__header {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				height: 75px;
+				width: 100%;
+				border-bottom: 1px solid $projectGreyColor;
+				.menu-hidden__logo {
+					margin: 12px 0 0 -21px;
+					a {
+						&::before {
+							content: url("../img/svg/logo-main.svg");
+						}
+					}
+				}
+				.menu-hidden__close-btn {
+					margin: 34px 0 0 0;
+					&::before {
+						content: url("../img/svg/close-btn.svg");
+					}
+				}
+			}
+			.menu-hidden__links {
+				ul {
+					margin: 12px 0 0 0;
+					width: 100%;
+					li {
+						display: inline-flex;
+						justify-content: space-between;
+						width: 100%;
+						font-weight: 400;
+						font-size: 13px;
+						line-height: 34px;
+						a {
+							color: $mainColor;
+							text-decoration: none;
+						}
+						.transition-arrow {
+							&::before {
+								content: url("../img/svg/transition-arrow.svg");
+								margin: 0 7px 0 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.menu-hidden.hidden {
+		display: none;
+	}
+	.common-btn {
+		display: inline-flex;
+		margin: 13px 0 0 0;
+		justify-content: center;
+		align-items: center;
+		width: 165px;
+		height: 35px;
+		border: 2px solid $secondaryColor;
+		border-radius: 50px;
+		background: rgba(255, 255, 255, 0);
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 20px;
+		text-align: center;
+		color: #0156ff;
+	}
+	.overflow.visible {
+		display: block;
+		position: fixed;
+		width: 100%;
+		right: 0;
+		height: 100%;
+		top: 0;
+		background-color: $mainColor;
+		z-index: 9998;
+		animation-name: overflow-appearance;
+		animation-timing-function: ease;
+		animation-duration: 0.5s;
+		filter: opacity(0.7);
+	}
+	.overflow.hidden {
+		display: none;
+	}
+	.container {
+		width: 728px;
+		max-width: 728px;
+		.ad {
+			height: 173px;
+			margin: 19px 0 0 0;
+		}
+		.list-view {
+			.vendor {
+			}
+		}
+	}
+	@keyframes appearance {
+		0% {
+			left: -56.77%;
+			top: 0%;
+		}
+		100% {
+			left: 0%;
+			top: 0%;
+		}
+	}
+	@keyframes overflow-appearance {
+		0% {
+			filter: opacity(0);
+		}
+		100% {
+			filter: opacity(0.7);
 		}
 	}
 }

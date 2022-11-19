@@ -664,3 +664,20 @@ $(".link-9").click(function () {
 	$(".link-7").removeClass("active");
 	$(".link-8").removeClass("active");
 });
+
+// ================================================================================================
+// Hidden menu
+// ================================================================================================
+$(".container__menu-hidden").click(function () {
+	$(".menu-hidden").removeClass("hidden");
+	$(".overflow").removeClass("hidden");
+	$(".menu-hidden").addClass("visible");
+	$(".overflow").addClass("visible");
+});
+
+$(".menu-hidden__close-btn").click(function () {
+	$(".menu-hidden").removeClass("visible");
+	$(".overflow").removeClass("visible");
+	$(".menu-hidden").addClass("hidden");
+	$(".overflow").addClass("hidden");
+});
