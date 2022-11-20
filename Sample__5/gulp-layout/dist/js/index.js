@@ -681,3 +681,121 @@ $(".menu-hidden__close-btn").click(function () {
 	$(".menu-hidden").addClass("hidden");
 	$(".overflow").addClass("hidden");
 });
+
+// ================================================================================================
+// Hidden footer link list
+// ================================================================================================
+$(".open-list.part-1").click(function () {
+	$(".open-list.part-1").removeClass("closed");
+	$(".open-list.part-1").addClass("active");
+	$(".list.part-1").removeClass("hidden");
+	$(".list.part-1").addClass("active");
+	$(".open-list.part-2").removeClass("active");
+	$(".open-list.part-2").addClass("closed");
+	$(".list.part-2").removeClass("active");
+	$(".list.part-2").addClass("hidden");
+	$(".open-list.part-3").removeClass("active");
+	$(".open-list.part-3").addClass("closed");
+	$(".list.part-3").removeClass("active");
+	$(".list.part-3").addClass("hidden");
+	$(".open-list.part-4").removeClass("active");
+	$(".open-list.part-4").addClass("closed");
+	$(".list.part-4").removeClass("active");
+	$(".list.part-4").addClass("hidden");
+	$(".open-list.part-5").removeClass("active");
+	$(".open-list.part-5").addClass("closed");
+	$(".list.part-5").removeClass("active");
+	$(".list.part-5").addClass("hidden");
+});
+
+$(".open-list.part-2").click(function () {
+	$(".open-list.part-2").removeClass("closed");
+	$(".open-list.part-2").addClass("active");
+	$(".list.part-2").removeClass("hidden");
+	$(".list.part-2").addClass("active");
+	$(".open-list.part-1").removeClass("active");
+	$(".open-list.part-1").addClass("closed");
+	$(".list.part-1").removeClass("active");
+	$(".list.part-1").addClass("hidden");
+	$(".open-list.part-3").removeClass("active");
+	$(".open-list.part-3").addClass("closed");
+	$(".list.part-3").removeClass("active");
+	$(".list.part-3").addClass("hidden");
+	$(".open-list.part-4").removeClass("active");
+	$(".open-list.part-4").addClass("closed");
+	$(".list.part-4").removeClass("active");
+	$(".list.part-4").addClass("hidden");
+	$(".open-list.part-5").removeClass("active");
+	$(".open-list.part-5").addClass("closed");
+	$(".list.part-5").removeClass("active");
+	$(".list.part-5").addClass("hidden");
+});
+
+$(".open-list.part-3").click(function () {
+	$(".open-list.part-3").removeClass("closed");
+	$(".open-list.part-3").addClass("active");
+	$(".list.part-3").removeClass("hidden");
+	$(".list.part-3").addClass("active");
+	$(".open-list.part-1").removeClass("active");
+	$(".open-list.part-1").addClass("closed");
+	$(".list.part-1").removeClass("active");
+	$(".list.part-1").addClass("hidden");
+	$(".open-list.part-2").removeClass("active");
+	$(".open-list.part-2").addClass("closed");
+	$(".list.part-2").removeClass("active");
+	$(".list.part-2").addClass("hidden");
+	$(".open-list.part-4").removeClass("active");
+	$(".open-list.part-4").addClass("closed");
+	$(".list.part-4").removeClass("active");
+	$(".list.part-4").addClass("hidden");
+	$(".open-list.part-5").removeClass("active");
+	$(".open-list.part-5").addClass("closed");
+	$(".list.part-5").removeClass("active");
+	$(".list.part-5").addClass("hidden");
+});
+
+$(".open-list.part-4").click(function () {
+	$(".open-list.part-4").removeClass("closed");
+	$(".open-list.part-4").addClass("active");
+	$(".list.part-4").removeClass("hidden");
+	$(".list.part-4").addClass("active");
+	$(".open-list.part-1").removeClass("active");
+	$(".open-list.part-1").addClass("closed");
+	$(".list.part-1").removeClass("active");
+	$(".list.part-1").addClass("hidden");
+	$(".open-list.part-2").removeClass("active");
+	$(".open-list.part-2").addClass("closed");
+	$(".list.part-2").removeClass("active");
+	$(".list.part-2").addClass("hidden");
+	$(".open-list.part-3").removeClass("active");
+	$(".open-list.part-3").addClass("closed");
+	$(".list.part-3").removeClass("active");
+	$(".list.part-3").addClass("hidden");
+	$(".open-list.part-5").removeClass("active");
+	$(".open-list.part-5").addClass("closed");
+	$(".list.part-5").removeClass("active");
+	$(".list.part-5").addClass("hidden");
+});
+
+$(".open-list.part-5").click(function () {
+	$(".open-list.part-5").removeClass("closed");
+	$(".open-list.part-5").addClass("active");
+	$(".list.part-5").removeClass("hidden");
+	$(".list.part-5").addClass("active");
+	$(".open-list.part-1").removeClass("active");
+	$(".open-list.part-1").addClass("closed");
+	$(".list.part-1").removeClass("active");
+	$(".list.part-1").addClass("hidden");
+	$(".open-list.part-2").removeClass("active");
+	$(".open-list.part-2").addClass("closed");
+	$(".list.part-2").removeClass("active");
+	$(".list.part-2").addClass("hidden");
+	$(".open-list.part-3").removeClass("active");
+	$(".open-list.part-3").addClass("closed");
+	$(".list.part-3").removeClass("active");
+	$(".list.part-3").addClass("hidden");
+	$(".open-list.part-4").removeClass("active");
+	$(".open-list.part-4").addClass("closed");
+	$(".list.part-4").removeClass("active");
+	$(".list.part-4").addClass("hidden");
+});
