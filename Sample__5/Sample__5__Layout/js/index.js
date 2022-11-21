@@ -9,6 +9,11 @@ $(".btn-clear__item-2").click(function () {
 	$(".aside-right__submit-2").addClass("hidden-text");
 });
 
+$(".aside-right__submit").click(function () {
+	$(".aside-right__submit-1").addClass("hidden-text");
+	$(".aside-right__submit-2").addClass("hidden-text");
+});
+
 // Color-picker
 $(".color__block-1").click(function () {
 	$(".active__block-1").removeClass("hide");
@@ -199,39 +204,22 @@ var swiper = new Swiper('.swiper-container', {
 // ================================================================================================
 // Read More button (catalog.html)
 // ================================================================================================
-jQuery(function ($) {
-	// resize the slide-read-more Div
-	var box = $(".slide-read-more");
-	var minimumHeight = 275; // max height in pixels
-	var initialHeight = box.innerHeight();
-	// reduce the text if it's longer than 200px
-	if (initialHeight < minimumHeight) {
-		box.css('height', initialHeight);
-		$(".read-more-button").show();
-	}
 
-	SliderReadMore();
-
-	function SliderReadMore() {
-		$(".slide-read-more-button").on('click', function () {
-			// get current height
-			var currentHeight = box.innerHeight();
-
-			// get height with auto applied
-			var autoHeight = box.css('height', 'auto').innerHeight();
-
-			// reset height and revert to original if current and auto are equal
-			var newHeight = (currentHeight | 0) === (autoHeight | 0) ? minimumHeight : autoHeight;
-
-			box.css('height', currentHeight).animate({
-				height: (newHeight)
-			})
-			$('html, body').animate({
-				scrollBottom: box.offset().bottom
-			});
-			$(".slide-read-more-button").toggle();
-		});
-	}
+$(document).ready(function () {
+	$("#slide-read-more-button").click(function () {
+		var elem = $("#slide-read-more-button").text();
+		if (elem == "More") {
+			//Stuff to do when btn is in the read more state
+			$("#slide-read-more-button").text("Less");
+			$("#text").slideDown();
+			$('.info__container').addClass('no-before');
+		} else {
+			//Stuff to do when btn is in the read less state
+			$("#slide-read-more-button").text("More");
+			$("#text").slideUp();
+			$('.info__container').removeClass('no-before');
+		}
+	});
 });
 
 // ================================================================================================
@@ -663,4 +651,139 @@ $(".link-9").click(function () {
 	$(".link-6").removeClass("active");
 	$(".link-7").removeClass("active");
 	$(".link-8").removeClass("active");
+});
+
+// ================================================================================================
+// Hidden menu
+// ================================================================================================
+$(".container__menu-hidden").click(function () {
+	$(".menu-hidden").removeClass("hidden");
+	$(".overflow").removeClass("hidden");
+	$(".menu-hidden").addClass("visible");
+	$(".overflow").addClass("visible");
+});
+
+$(".menu-hidden__close-btn").click(function () {
+	$(".menu-hidden").removeClass("visible");
+	$(".overflow").removeClass("visible");
+	$(".menu-hidden").addClass("hidden");
+	$(".overflow").addClass("hidden");
+});
+
+// ================================================================================================
+// Hidden footer link list
+// ================================================================================================
+$(".open-list.part-1").click(function () {
+	$(".open-list.part-1").removeClass("closed");
+	$(".open-list.part-1").addClass("active");
+	$(".list.part-1").removeClass("hidden");
+	$(".list.part-1").addClass("active");
+	$(".open-list.part-2").removeClass("active");
+	$(".open-list.part-2").addClass("closed");
+	$(".list.part-2").removeClass("active");
+	$(".list.part-2").addClass("hidden");
+	$(".open-list.part-3").removeClass("active");
+	$(".open-list.part-3").addClass("closed");
+	$(".list.part-3").removeClass("active");
+	$(".list.part-3").addClass("hidden");
+	$(".open-list.part-4").removeClass("active");
+	$(".open-list.part-4").addClass("closed");
+	$(".list.part-4").removeClass("active");
+	$(".list.part-4").addClass("hidden");
+	$(".open-list.part-5").removeClass("active");
+	$(".open-list.part-5").addClass("closed");
+	$(".list.part-5").removeClass("active");
+	$(".list.part-5").addClass("hidden");
+});
+
+$(".open-list.part-2").click(function () {
+	$(".open-list.part-2").removeClass("closed");
+	$(".open-list.part-2").addClass("active");
+	$(".list.part-2").removeClass("hidden");
+	$(".list.part-2").addClass("active");
+	$(".open-list.part-1").removeClass("active");
+	$(".open-list.part-1").addClass("closed");
+	$(".list.part-1").removeClass("active");
+	$(".list.part-1").addClass("hidden");
+	$(".open-list.part-3").removeClass("active");
+	$(".open-list.part-3").addClass("closed");
+	$(".list.part-3").removeClass("active");
+	$(".list.part-3").addClass("hidden");
+	$(".open-list.part-4").removeClass("active");
+	$(".open-list.part-4").addClass("closed");
+	$(".list.part-4").removeClass("active");
+	$(".list.part-4").addClass("hidden");
+	$(".open-list.part-5").removeClass("active");
+	$(".open-list.part-5").addClass("closed");
+	$(".list.part-5").removeClass("active");
+	$(".list.part-5").addClass("hidden");
+});
+
+$(".open-list.part-3").click(function () {
+	$(".open-list.part-3").removeClass("closed");
+	$(".open-list.part-3").addClass("active");
+	$(".list.part-3").removeClass("hidden");
+	$(".list.part-3").addClass("active");
+	$(".open-list.part-1").removeClass("active");
+	$(".open-list.part-1").addClass("closed");
+	$(".list.part-1").removeClass("active");
+	$(".list.part-1").addClass("hidden");
+	$(".open-list.part-2").removeClass("active");
+	$(".open-list.part-2").addClass("closed");
+	$(".list.part-2").removeClass("active");
+	$(".list.part-2").addClass("hidden");
+	$(".open-list.part-4").removeClass("active");
+	$(".open-list.part-4").addClass("closed");
+	$(".list.part-4").removeClass("active");
+	$(".list.part-4").addClass("hidden");
+	$(".open-list.part-5").removeClass("active");
+	$(".open-list.part-5").addClass("closed");
+	$(".list.part-5").removeClass("active");
+	$(".list.part-5").addClass("hidden");
+});
+
+$(".open-list.part-4").click(function () {
+	$(".open-list.part-4").removeClass("closed");
+	$(".open-list.part-4").addClass("active");
+	$(".list.part-4").removeClass("hidden");
+	$(".list.part-4").addClass("active");
+	$(".open-list.part-1").removeClass("active");
+	$(".open-list.part-1").addClass("closed");
+	$(".list.part-1").removeClass("active");
+	$(".list.part-1").addClass("hidden");
+	$(".open-list.part-2").removeClass("active");
+	$(".open-list.part-2").addClass("closed");
+	$(".list.part-2").removeClass("active");
+	$(".list.part-2").addClass("hidden");
+	$(".open-list.part-3").removeClass("active");
+	$(".open-list.part-3").addClass("closed");
+	$(".list.part-3").removeClass("active");
+	$(".list.part-3").addClass("hidden");
+	$(".open-list.part-5").removeClass("active");
+	$(".open-list.part-5").addClass("closed");
+	$(".list.part-5").removeClass("active");
+	$(".list.part-5").addClass("hidden");
+});
+
+$(".open-list.part-5").click(function () {
+	$(".open-list.part-5").removeClass("closed");
+	$(".open-list.part-5").addClass("active");
+	$(".list.part-5").removeClass("hidden");
+	$(".list.part-5").addClass("active");
+	$(".open-list.part-1").removeClass("active");
+	$(".open-list.part-1").addClass("closed");
+	$(".list.part-1").removeClass("active");
+	$(".list.part-1").addClass("hidden");
+	$(".open-list.part-2").removeClass("active");
+	$(".open-list.part-2").addClass("closed");
+	$(".list.part-2").removeClass("active");
+	$(".list.part-2").addClass("hidden");
+	$(".open-list.part-3").removeClass("active");
+	$(".open-list.part-3").addClass("closed");
+	$(".list.part-3").removeClass("active");
+	$(".list.part-3").addClass("hidden");
+	$(".open-list.part-4").removeClass("active");
+	$(".open-list.part-4").addClass("closed");
+	$(".list.part-4").removeClass("active");
+	$(".list.part-4").addClass("hidden");
 });
