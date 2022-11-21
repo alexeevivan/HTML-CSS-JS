@@ -9,6 +9,11 @@ $(".btn-clear__item-2").click(function () {
 	$(".aside-right__submit-2").addClass("hidden-text");
 });
 
+$(".aside-right__submit").click(function () {
+	$(".aside-right__submit-1").addClass("hidden-text");
+	$(".aside-right__submit-2").addClass("hidden-text");
+});
+
 // Color-picker
 $(".color__block-1").click(function () {
 	$(".active__block-1").removeClass("hide");
@@ -199,39 +204,22 @@ var swiper = new Swiper('.swiper-container', {
 // ================================================================================================
 // Read More button (catalog.html)
 // ================================================================================================
-jQuery(function ($) {
-	// resize the slide-read-more Div
-	var box = $(".slide-read-more");
-	var minimumHeight = 275; // max height in pixels
-	var initialHeight = box.innerHeight();
-	// reduce the text if it's longer than 200px
-	if (initialHeight < minimumHeight) {
-		box.css('height', initialHeight);
-		$(".read-more-button").show();
-	}
 
-	SliderReadMore();
-
-	function SliderReadMore() {
-		$(".slide-read-more-button").on('click', function () {
-			// get current height
-			var currentHeight = box.innerHeight();
-
-			// get height with auto applied
-			var autoHeight = box.css('height', 'auto').innerHeight();
-
-			// reset height and revert to original if current and auto are equal
-			var newHeight = (currentHeight | 0) === (autoHeight | 0) ? minimumHeight : autoHeight;
-
-			box.css('height', currentHeight).animate({
-				height: (newHeight)
-			})
-			$('html, body').animate({
-				scrollBottom: box.offset().bottom
-			});
-			$(".slide-read-more-button").toggle();
-		});
-	}
+$(document).ready(function () {
+	$("#slide-read-more-button").click(function () {
+		var elem = $("#slide-read-more-button").text();
+		if (elem == "More") {
+			//Stuff to do when btn is in the read more state
+			$("#slide-read-more-button").text("Less");
+			$("#text").slideDown();
+			$('.info__container').addClass('no-before');
+		} else {
+			//Stuff to do when btn is in the read less state
+			$("#slide-read-more-button").text("More");
+			$("#text").slideUp();
+			$('.info__container').removeClass('no-before');
+		}
+	});
 });
 
 // ================================================================================================
