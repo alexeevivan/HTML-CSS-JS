@@ -7111,6 +7111,84 @@ footer {
 		}
 	}
 
+	// contact.html
+	.contact__container {
+		width: calc(100% - 48px);
+		padding: 0 24px 0 24px;
+		.contact__main-info {
+			.contact__interactive {
+				.contact__greeting {
+					span {
+						position: absolute;
+						:last-child {
+							margin: 7px 0 0 0;
+						}
+					}
+				}
+				.contact__form {
+					width: 100%;
+					margin: 40px 0 0 0;
+					.fill-form {
+						.row {
+							.row__item-1.mobile {
+								width: 100%;
+								input {
+									width: 100%;
+								}
+							}
+							.row__item-1.review {
+								textarea {
+									padding: 10px 17px 0 17px;
+								}
+							}
+							input[type="submit"] {
+								width: 133px;
+								height: 38px;
+								font-size: 13px;
+								line-height: 20px;
+							}
+						}
+					}
+				}
+			}
+			.contact__address {
+				margin: 130px 0 0 26px;
+				.contact__address-image {
+					.contact__address-image-item-2 {
+						margin: 5px 0 0 0;
+					}
+					.contact__address-image-item-3 {
+						margin: 18px 0 0 0;
+					}
+					.contact__address-image-item-4 {
+						margin: 5px 0 0 0;
+					}
+				}
+				.contact__address-content {
+					.item-1,
+					.item-2,
+					.item-3,
+					.item-4 {
+						h4 {
+							font-size: 14px;
+							line-height: 21px;
+						}
+						p {
+							font-size: 11px;
+							line-height: 16px;
+						}
+					}
+					.item-4 {
+						a {
+							font-size: 11px;
+							line-height: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+
 	.fill-form,
 	.fill-form-delivery,
 	.fill-form-discount {
@@ -7189,6 +7267,10 @@ footer {
 
 	.information-content.checkout {
 		margin: 34px 0 0 0;
+	}
+
+	.information-content.contact {
+		margin: 42px 0 0 0;
 	}
 
 	.information-block.about-product-block {
