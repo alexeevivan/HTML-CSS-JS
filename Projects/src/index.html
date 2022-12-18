@@ -1,16 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>
-		Skin Care
-	</title>
-</head>
+@@include('html/head.html',{
+"title":"Skin Care Home Page",
+})
 
 <body>
+	<div class="wrapper">
+		<div class="container">
+			<div class="container__item-1">
+				@@include('html/header.html')
+				<div class="container__overlay"></div>
+				<div class="container__hexagon-img">
+					<img src="img/content/hexagon.png" alt="">
+				</div>
+				<div class="container__circle"></div>
+				<div class="container__intro">
+					<div class="container__reviews">
+						<p>
+							Trustpilot 4.6(134 reviews)
+						</p>
+					</div>
+					<div class="container__content">
+						<h3>
+							Because you
+						</h3>
+						<h2>
+							deserve the best skin possible
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo nesciunt nobis porro.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit
+						</p>
+					</div>
+					<div class="container__interactive">
+						<button type="submit">
+							Start Free Consultation
+						</button>
+						<a href="#">
+							Why Choose Dahl?
+						</a>
+					</div>
+					<div class="container__labels">
+						<div class="container__label">
+							<span>
+								free express <br> delivery
+							</span>
+						</div>
+						<div class="container__label">
+							<span>
+								Money back <br> guaranteed
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container__item-2">
+				<div class="container__content">
+					<h3>
+						Need a Consultation ?
+					</h3>
+					<h2>
+						we are always here to help
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo nesciunt nobis porro.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
 

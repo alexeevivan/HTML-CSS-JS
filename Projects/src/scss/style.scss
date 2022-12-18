@@ -1,4 +1,5 @@
 @import "null";
+@import "fonts";
 
 // ================================================================================================
 // Variables
@@ -18,16 +19,400 @@ $md4: 479.98; // Phones S
 // ================================================================================================
 // Font main color
 // ================================================================================================
-$mainColor: #17181D;
+$mainColor: #FDFDFD;
 // ================================================================================================
 // Secondary color
 // ================================================================================================
-$secondaryColor: #bb2649;
+$primaryBrown: #A56A43;
 // ================================================================================================
-// Additional background color
+// Additional colors
 // ================================================================================================
-$lightBgColor: #9B9B9B;
+$btnBrown: #B68050;
+$btnBlue: #151869;
+$btnLight: #FFFFFF;
+$white: #FFFFFF;
+$blue: #151869;
 
 // ================================================================================================
 // PC-styling
 // ================================================================================================
+body {
+	background-color: $mainColor;
+}
+
+.wrapper {
+	.container {
+		max-width: 1440px;
+		height: 100%;
+		margin: 0 auto;
+
+		.container__item-1 {
+			height: 859.5px;
+			background-image: url("../img/content/image-1.jpg");
+
+			.container__overlay {
+				max-width: 1440px;
+				width: 100%;
+				height: 859.5px;
+				background: linear-gradient(0deg, rgba(72, 42, 7, 0.22), rgba(72, 42, 7, 0.22)),
+					rgba(72, 42, 7, 0.39);
+				position: absolute;
+				clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+			}
+
+			.container__hexagon-img {
+				width: 1074.83px;
+				height: 1159.53px;
+				position: absolute;
+				top: -39.11px;
+				transform: rotate(-9.7deg);
+
+				img {
+					position: absolute;
+					max-width: 1200px;
+					height: 90%;
+					left: 100px;
+					filter: opacity(0.75);
+				}
+			}
+
+			.container__circle {
+				position: relative;
+				width: 130px;
+				height: 130px;
+				border-radius: 130px;
+				background-color: #d7b491;
+				top: 253px;
+				left: 1210px;
+			}
+
+			.header {
+				margin: 0 97px 0 177px;
+				padding: 68px 0 0 0;
+				max-width: 1166px;
+				position: absolute;
+				z-index: 1;
+
+				.header__container {
+					display: flex;
+					flex-direction: row;
+					width: 100%;
+					height: 78px;
+					align-items: center;
+
+					.header__item-1,
+					.header__item-2,
+					.header__item-3 {
+						margin: 0 77px 0 0;
+					}
+
+					.header__item-1,
+					.header__item-2,
+					.header__item-3,
+					.header__item-4 {
+						display: flex;
+						justify-content: space-between;
+					}
+
+					.header__item-1 {
+						width: 415px;
+
+						a {
+							color: $white;
+							font-size: 17px;
+							line-height: 20px;
+
+							&:first-child {
+								&::after {
+									content: url("../img/svg/arrow-down.svg");
+									position: absolute;
+									transform: translate(7px, -10%);
+								}
+							}
+						}
+					}
+
+					.header__item-2 {
+						a {
+							display: inline-flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+
+							span {
+								color: $white;
+
+								&:nth-child(1) {
+									font-family: 'aremat font regular';
+									font-size: 51px;
+									line-height: 49.52px;
+								}
+
+								&:nth-child(2) {
+									font-family: 'Gilroy';
+									font-size: 24px;
+									line-height: 28px;
+								}
+							}
+						}
+					}
+
+					.header__item-3 {
+						width: 284px;
+
+						a {
+							color: $white;
+							font-size: 17px;
+							line-height: 20px;
+
+							&:first-child {
+								&::after {
+									content: url("../img/svg/arrow-down.svg");
+									position: absolute;
+									transform: translate(7px, -10%);
+								}
+							}
+						}
+					}
+
+					.header__item-4 {
+						width: 131px;
+						align-items: center;
+
+						.search {
+
+							&::before {
+								content: url("../img/svg/search.svg");
+							}
+						}
+
+						.user {
+
+							&::before {
+								content: url("../img/svg/user.svg");
+							}
+						}
+
+						.cart {
+							&::before {
+								content: url("../img/svg/cart.svg");
+							}
+						}
+					}
+				}
+			}
+
+			.container__intro {
+				position: relative;
+				margin: 118px 0 0 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				.container__reviews {
+					height: 39px;
+					display: flex;
+
+					p {
+						font-family: 'aremat font regular';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 100.55%;
+						color: $white;
+						display: inline-flex;
+						align-items: center;
+
+						&::before {
+							content: url("../img/svg/star.svg");
+							margin: 0 10px 0 0;
+						}
+					}
+				}
+
+				.container__content {
+					h3 {
+						color: #FFD7BD;
+
+						&::before,
+						&::after {
+							content: url("../img/svg/line.svg");
+						}
+					}
+
+					h2 {
+						color: $white;
+					}
+
+					p {
+						color: $white;
+						font-weight: 600;
+					}
+				}
+
+				.container__interactive {
+					margin: 52px;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+					width: 513px;
+
+					button[type="submit"],
+					a {
+						width: 244px;
+						height: 68px;
+						border-radius: 18px;
+					}
+
+					button[type="submit"] {
+						background-color: $white;
+						font-family: "aremat font";
+						font-style: normal;
+						font-weight: 400;
+						font-size: 17px;
+						line-height: 17px;
+						color: #B68050;
+					}
+
+					a {
+						border: 2px solid $white;
+						display: inline-flex;
+						justify-content: center;
+						align-items: center;
+						font-family: "aremat font";
+						font-size: 17px;
+						line-height: 17px;
+						color: $white;
+					}
+				}
+
+				.container__labels {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					width: 397px;
+					height: 46.46px;
+
+					.container__label {
+						display: flex;
+						align-items: center;
+
+						&:first-child {
+							width: 154px;
+							height: 46.45px;
+							margin: 0 45px 0 0;
+
+							span {
+								&::before {
+									content: url("../img/svg/delivery.svg");
+									position: absolute;
+									width: 46.45px;
+									height: 46.45px;
+									margin: 0 107px 0 0;
+								}
+							}
+						}
+
+						&:last-child {
+							width: 153px;
+							height: 39px;
+							margin: 0 0 0 45px;
+
+							span {
+								&::before {
+									content: url("../img/svg/guarantee.svg");
+									position: absolute;
+									width: 46px;
+									height: 39px;
+									margin: 0 107px 0 0;
+								}
+							}
+						}
+
+						span {
+							display: inline-flex;
+							height: 100%;
+							width: 100%;
+							justify-content: end;
+							align-items: center;
+							font-family: "aremat font";
+							font-size: 16px;
+							line-height: 100.55%;
+							color: rgba(255, 255, 255, 0.79);
+						}
+					}
+				}
+			}
+		}
+
+		.container__item-2 {
+			.container__content {
+				h3 {
+					color: #BE9169;
+
+					&::before,
+					&::after {
+						content: url("../img/svg/line.svg");
+					}
+				}
+
+				h2 {
+					color: $btnBrown;
+				}
+
+				p {
+					color: #D9AC85;
+					font-weight: 400;
+					margin: 0 auto;
+				}
+			}
+		}
+
+		.container__content {
+			margin: 17px 0 0 0;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+
+			h3 {
+				color: #FFD7BD;
+				font-size: 37px;
+				line-height: 31.62px;
+				font-family: "boiling";
+
+				&::before,
+				&::after {
+					content: url("../img/svg/line.svg");
+					position: absolute;
+				}
+
+				&::before {
+					transform: translate(-194px, -25%);
+				}
+
+				&::after {
+					transform: translate(15px, -25%);
+				}
+			}
+
+			h2 {
+				color: $white;
+				font-family: "aremat font";
+				font-size: 55px;
+				line-height: 65.3px;
+			}
+
+			p {
+				margin: 13px 0 0 0;
+				width: 887px;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-size: 19px;
+				line-height: 23px;
+				color: $white;
+			}
+		}
+	}
+}
