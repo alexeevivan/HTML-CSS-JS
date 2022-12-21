@@ -206,18 +206,17 @@ body {
   height: 1159.53px;
   position: absolute;
   top: -39.11px;
-  -webkit-transform: rotate(-9.7deg);
-      -ms-transform: rotate(-9.7deg);
-          transform: rotate(-9.7deg);
 }
 
 .wrapper .container.primary-brown.active .container__item-1 .container__hexagon-img img {
   position: absolute;
-  max-width: 1200px;
+  max-width: 1100px;
   height: 90%;
   left: 100px;
   -webkit-filter: opacity(0.75);
           filter: opacity(0.75);
+  -webkit-animation: rotation linear 36s infinite;
+          animation: rotation linear 36s infinite;
 }
 
 .wrapper .container.primary-brown.active .container__item-1 .container__circle {
@@ -245,6 +244,11 @@ body {
   border-radius: 90px;
   font-family: "aremat font";
   color: #d7b491;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-animation: pulse-brown 1.5s infinite;
+          animation: pulse-brown 1.5s infinite;
 }
 
 .wrapper .container.primary-brown.active .container__item-1 .header {
@@ -1048,7 +1052,7 @@ body {
   height: 95px;
   left: 931px;
   top: 367px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border-radius: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1062,9 +1066,17 @@ body {
 }
 
 .wrapper .container.primary-blue.active .container__item-1 .container__intro .container__right-side .container__btn .color-changer-blue {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
   font-family: "aremat font";
   color: #151869;
   background-color: #FFFFFF;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-animation: pulse-blue 1.5s infinite;
+          animation: pulse-blue 1.5s infinite;
 }
 
 .wrapper .container.primary-blue.active .container__item-1 .container__intro .container__right-side .container__grid-item.item-1 {
@@ -1770,6 +1782,98 @@ body {
   font-size: 22px;
   line-height: 21px;
   color: #151869;
+}
+
+@-webkit-keyframes pulse-blue {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(136, 138, 197, 0.1803921569);
+            box-shadow: 0 0 0 0 rgba(136, 138, 197, 0.1803921569);
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 1em #888AC5;
+            box-shadow: 0 0 0 1em #888AC5;
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(136, 138, 197, 0.1803921569);
+            box-shadow: 0 0 0 0 rgba(136, 138, 197, 0.1803921569);
+  }
+}
+
+@keyframes pulse-blue {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(136, 138, 197, 0.1803921569);
+            box-shadow: 0 0 0 0 rgba(136, 138, 197, 0.1803921569);
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 1em #888AC5;
+            box-shadow: 0 0 0 1em #888AC5;
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(136, 138, 197, 0.1803921569);
+            box-shadow: 0 0 0 0 rgba(136, 138, 197, 0.1803921569);
+  }
+}
+
+@-webkit-keyframes pulse-brown {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1803921569);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1803921569);
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 1em #EFEFEF;
+            box-shadow: 0 0 0 1em #EFEFEF;
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1803921569);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1803921569);
+  }
+}
+
+@keyframes pulse-brown {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1803921569);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1803921569);
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 1em #EFEFEF;
+            box-shadow: 0 0 0 1em #EFEFEF;
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1803921569);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1803921569);
+  }
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .wrapper .container.primary-brown.active .container__item-1 {

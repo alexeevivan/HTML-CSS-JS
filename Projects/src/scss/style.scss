@@ -1,5 +1,6 @@
 @import "null";
 @import "fonts";
+@import "responsive";
 
 // ================================================================================================
 // Variables
@@ -77,14 +78,14 @@ body {
 						height: 1159.53px;
 						position: absolute;
 						top: -39.11px;
-						transform: rotate(-9.7deg);
 
 						img {
 							position: absolute;
-							max-width: 1200px;
+							max-width: 1100px;
 							height: 90%;
 							left: 100px;
 							filter: opacity(0.75);
+							animation: rotation linear 36s infinite;
 						}
 					}
 
@@ -106,6 +107,8 @@ body {
 							border-radius: 90px;
 							font-family: "aremat font";
 							color: #d7b491;
+							transition: all .3s ease;
+							animation: pulse-brown 1.5s infinite;
 						}
 					}
 
@@ -804,16 +807,21 @@ body {
 								height: 95px;
 								left: 931px;
 								top: 367px;
-								background: $white;
+								background-color: $white;
 								border-radius: 12px;
 								display: flex;
 								justify-content: center;
 								align-items: center;
 
 								.color-changer-blue {
+									height: 100%;
+									width: 100%;
+									border-radius: 12px;
 									font-family: "aremat font";
 									color: $blue;
 									background-color: $white;
+									transition: all .3s ease;
+									animation: pulse-blue 1.5s infinite;
 								}
 							}
 
@@ -1390,6 +1398,48 @@ body {
 					}
 				}
 			}
+		}
+	}
+
+	@keyframes pulse-blue {
+
+		0% {
+			box-shadow: 0 0 0 0 #888AC52e;
+		}
+
+		70% {
+			box-shadow: 0 0 0 1em #888AC5;
+		}
+
+		100% {
+			box-shadow: 0 0 0 0 #888AC52e;
+		}
+
+	}
+
+	@keyframes pulse-brown {
+
+		0% {
+			box-shadow: 0 0 0 0 #ffffff2e;
+		}
+
+		70% {
+			box-shadow: 0 0 0 1em #EFEFEF;
+		}
+
+		100% {
+			box-shadow: 0 0 0 0 #ffffff2e;
+		}
+
+	}
+
+	@keyframes rotation {
+		from {
+			transform: rotate(0deg);
+		}
+
+		to {
+			transform: rotate(360deg);
 		}
 	}
 }
