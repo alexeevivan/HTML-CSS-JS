@@ -61,16 +61,3 @@ $(".block-3").click(function () {
 	$(".return-to-home").removeClass("active");
 	$(".return-to-home").addClass("hide");
 });
-
-var body = document.body;
-$(".menu").click(function () {
-	$(".menu").addClass("open");
-	$(".overlay").addClass("active");
-	$(body).addClass("overlay-active");
-})
-
-$(".menu" & ".open").click(function () {
-	$(".menu").removeClass("open")
-	$(".overlay").removeClass("active");
-	$(body).removeClass("overlay-active");
-})
