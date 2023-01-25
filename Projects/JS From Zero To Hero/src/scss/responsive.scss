@@ -30,7 +30,8 @@ $desktop: only screen and (min-width: 1400px);
 // Code
 // ================================================================================================
 
-@media only screen and (width >=320px) and (width <=479.98px) and (orientation:portrait) {
+@media only screen and (width >=320px) and (width <=479.98px) and (orientation:portrait),
+(device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation: portrait) {
 	body {
 		.wrapper {
 			max-width: 479.98px;
@@ -271,7 +272,10 @@ $desktop: only screen and (min-width: 1400px);
 	}
 }
 
-@media only screen and (width >=480px) and (width <=767.98px) and (orientation:portrait) {
+@media only screen and (width >=480px) and (width <=767.98px) and (orientation:portrait),
+(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait),
+(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait),
+(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
 	body {
 		.wrapper {
 			max-width: 767.98px;
@@ -493,7 +497,10 @@ $desktop: only screen and (min-width: 1400px);
 	}
 }
 
-@media only screen and (width >=480px) and (width <=767.98px) and (orientation:landscape) {
+@media only screen and (width >=480px) and (width <=767.98px) and (orientation:landscape),
+(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape),
+(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape),
+(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
 	body {
 		.wrapper {
 			max-width: 767.98px;
@@ -1160,7 +1167,8 @@ $desktop: only screen and (min-width: 1400px);
 	}
 }
 
-@media only screen and (width >=320px) and (width <=379.98px) and (orientation:portrait) {
+@media only screen and (width >=320px) and (width <=379.98px) and (orientation:portrait),
+(device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation: portrait) {
 	body {
 		.wrapper {
 			main {
